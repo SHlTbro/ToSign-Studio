@@ -1,0 +1,19 @@
+# YY To-sign Studio - locked runtime (CC-19, Owner-approved 2026-09-17)
+# Scope: browser entry + deterministic sample render + MVP backend.
+# Excludes spike lanes: no torch, no paddle, no OCR (isolated venvs).
+# Python 3.11 (tested 3.11.15).
+# Pin policy: exact tested set (9/9 backend probes + 13/13 integration probe green).
+pillow==12.3.0
+pillow-heif==1.7.0
+fastapi==0.108.0
+starlette==0.32.0.post1
+uvicorn==0.52.4
+sqlalchemy==2.0.52
+pydantic==2.13.5
+pydantic-settings==2.15.0
+httpx==0.28.1
+anyio==4.14.2
+python-multipart==0.0.32
+requests==2.34.2
+bcrypt==5.0.0
+fontTools==4.64.0

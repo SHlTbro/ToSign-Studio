@@ -1,0 +1,173 @@
+{
+  "schema": "layout-logical-whitespace-proof/1",
+  "source_implementation_sha256": "61d5ce2ee759f91ebed647cbb59f504325711d325957e9a592d48fc974cdb8d3",
+  "not_a_visual_score": true,
+  "receipts": {
+    "ascii_space": "749edb89962ac61ae362ebcf66d526c832e133a4f579bc32186fe423f3c9c3d7",
+    "fullwidth_space": "c1c92684fae3986afc06afb4d44363f84390fbd3d4c6b505335e9e2765d9df3f",
+    "leading_trailing_inline": "2be49fcca591d27b50e27d5e145b148e147aba4d9f2fd47dd4c9a2ae2d9561ee",
+    "blank_line_slots": "4f8399c28d088ff7522d3d244b382ce730c6c030ae00e09c58c346b8aaa51896"
+  },
+  "leading_trailing_inline": {
+    "leading_pixels_before_global_fit": 132,
+    "trailing_pixels_before_global_fit": 132,
+    "global_fit": 1.0,
+    "line_output_size": [
+      610,
+      157
+    ],
+    "explicit_character_transforms": [
+      {
+        "char": "晴",
+        "source": "M2",
+        "png_sha256": "90597cbf1a89d1b5155d3a77512971641264624ba49ddaa16950fa0b0fc9fdd2",
+        "receipt_sha256": "cce31bd4cd06b9e830176a35fa24fe4d1482ff2abfc59bd1d7baf46e06cd4ee0",
+        "seed": 4180442566,
+        "text_index": 1,
+        "explicit_line_breaks_before": 0,
+        "inline_whitespace": {
+          "ascii_spaces": 0,
+          "fullwidth_spaces": 1,
+          "tabs": 0,
+          "other_spaces": 0,
+          "advance_h": 1.0
+        },
+        "space_before_units": 1,
+        "space_before_h": 1.0,
+        "space_after_h": 0,
+        "layout_transform": {
+          "x_float": -17.0,
+          "ink_x": 0.0,
+          "scale": 0.9940677966101695,
+          "baseline_residual_h": -0.00921035325,
+          "gap_before_observed_h": null,
+          "gap_before_applied_h": null,
+          "explicit_whitespace_units": 1,
+          "explicit_whitespace_advance_h": 1.0,
+          "explicit_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 1,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 1.0
+          },
+          "segment_boundary_gap_unobserved": false,
+          "source_segment_id": "NIKA-010:line-2:6-8",
+          "source_candidate_id": "NIKA-010-06",
+          "source_sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+          "phase": 0,
+          "segment_counter": 0,
+          "native_canvas": [
+            144,
+            144
+          ],
+          "transformed_ink_bbox": [
+            17,
+            6,
+            126,
+            137
+          ],
+          "x": -17,
+          "y": -12,
+          "canvas_position": [
+            132,
+            14
+          ],
+          "global_fit": 1.0,
+          "rotation_degrees": 0,
+          "shear": 0,
+          "width_factor": 1,
+          "line_index": 0,
+          "line_top": 0,
+          "paragraph_native_scale": 1.0
+        }
+      },
+      {
+        "char": "梦",
+        "source": "M2",
+        "png_sha256": "3ae98929a98314a79f14aa477dc5b4561f9da8594ea5b6e9f2550f4207f48d26",
+        "receipt_sha256": "ce2754188d1f8680379983fdc684cf23dffd3c50b2be310a1e25d64b6b4bca45",
+        "seed": 984928231,
+        "text_index": 3,
+        "explicit_line_breaks_before": 0,
+        "inline_whitespace": {
+          "ascii_spaces": 1,
+          "fullwidth_spaces": 0,
+          "tabs": 0,
+          "other_spaces": 0,
+          "advance_h": 0.4
+        },
+        "space_before_units": 1,
+        "space_before_h": 0.4,
+        "space_after_h": 1.0,
+        "layout_transform": {
+          "x_float": 176.68700524800002,
+          "ink_x": 192.68700524800002,
+          "scale": 1.0533898305084746,
+          "baseline_residual_h": 0.00921035325,
+          "gap_before_observed_h": 0.28813559,
+          "gap_before_applied_h": 0.23399246399999998,
+          "explicit_whitespace_units": 1,
+          "explicit_whitespace_advance_h": 0.4,
+          "explicit_whitespace": {
+            "ascii_spaces": 1,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.4
+          },
+          "segment_boundary_gap_unobserved": false,
+          "source_segment_id": "NIKA-010:line-2:6-8",
+          "source_candidate_id": "NIKA-010-07",
+          "source_sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+          "phase": 0,
+          "segment_counter": 0,
+          "native_canvas": [
+            144,
+            144
+          ],
+          "transformed_ink_bbox": [
+            16,
+            8,
+            136,
+            146
+          ],
+          "x": 177,
+          "y": -26,
+          "canvas_position": [
+            326,
+            0
+          ],
+          "global_fit": 1.0,
+          "rotation_degrees": 0,
+          "shear": 0,
+          "width_factor": 1,
+          "line_index": 0,
+          "line_top": 0,
+          "paragraph_native_scale": 1.0
+        }
+      }
+    ]
+  },
+  "blank_line_slots": {
+    "line_count": 5,
+    "blank_indices": [
+      0,
+      2,
+      4
+    ],
+    "line_pitch": 130,
+    "output_size": [
+      179,
+      650
+    ],
+    "record_line_indices": [
+      1,
+      1,
+      3,
+      3
+    ]
+  },
+  "unit_tests": "16 geometry cases pass, including CRLF/CR normalization, exact repeat, retained leading/trailing whitespace and no input pixel mutation",
+  "production_API_acceptance": false
+}

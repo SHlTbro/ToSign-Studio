@@ -1,0 +1,983 @@
+{
+  "schema": "dyyy-apparent-ink-palette/1",
+  "created_utc": "2026-10-02",
+  "purpose": "Read-only apparent ink-color measurements for a compositor audit; not a physical pigment or author-color model.",
+  "selection": {
+    "source_authority": "frozen canonical snapshot samples.jsonl source_bbox and parent hash; split.json assignments",
+    "thresholds": {
+      "NIKA-001": {
+        "broad": "R-G>60 and B-G>40 and R>130 and G<120",
+        "strict": "R-G>95 and B-G>85 and R>145 and G<95"
+      },
+      "NIKA-010": {
+        "broad": "B-R>90 and B-G>100 and R<130 and G<130",
+        "strict": "B-R>115 and B-G>140 and G<90 and R<100"
+      },
+      "NIKA-011": {
+        "broad": "B-R>85 and B-G>50 and G>80 and G<185 and R<125 and B>180",
+        "strict": "B-R>120 and B-G>70 and G>100 and G<175 and R<110 and B>205"
+      }
+    },
+    "threshold_origin": "/workspace/scratch/64fc1a466651/dyyy_natural_handwriting_research_20261002/author_geometry/measure_author_geometry.py",
+    "core_1px": "strict AND 1-iteration 3x3 square erosion of broad mask inside reviewed original-coordinate crop",
+    "core_2px": "same with 2 erosions; sensitivity only",
+    "inner_edge_1px": "broad mask minus its 1px erosion; measurement-band edge, not verified physical brush edge",
+    "outside_ring_1to3px": "three 3x3 dilations of broad mask minus broad mask, clipped to reviewed crop; adjacent context, not latent background under ink",
+    "quantiles": "empirical p10/median/p90 of encoded RGB and HSV; pixel correlations mean these are not confidence intervals",
+    "hsv_units": [
+      "degrees",
+      "percent",
+      "percent"
+    ],
+    "rgb_units": "8-bit encoded RGB interpreted as apparent sRGB; originals have no embedded ICC profile; no color correction performed"
+  },
+  "train_only_palette_candidates": [
+    "#C41AB4",
+    "#2F0CDD"
+  ],
+  "single_default_color_identified": false,
+  "all_27_canonical_rgb_planes_are_white": true,
+  "sources": [
+    {
+      "source": "NIKA-001",
+      "source_path": "/workspace/scratch/64fc1a466651/dyyy_original_source_context_readback_20261002/originals/NIKA-001.png",
+      "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "split": "train",
+      "n_accepted_occurrences": 11,
+      "n_distinct_labels": 11,
+      "source_size": [
+        748,
+        1135
+      ],
+      "source_mode": "RGB",
+      "source_embedded_color_profile_present": false,
+      "palette_name": "source_magenta",
+      "candidate_rgb_srgb_assumed": [
+        196,
+        26,
+        180
+      ],
+      "candidate_hex_srgb_assumed": "#C41AB4",
+      "candidate_hsv_deg_pct_pct": [
+        305.6471,
+        86.7347,
+        76.8627
+      ],
+      "candidate_role": "train_supported_candidate",
+      "candidate_estimator": "rounded componentwise median of per-occurrence core_1px RGB medians; equal occurrence weight",
+      "per_glyph_core_median_rgb_range": {
+        "min": [
+          191.0,
+          24.0,
+          169.0
+        ],
+        "max": [
+          199.0,
+          27.0,
+          181.0
+        ]
+      },
+      "line_balanced_core_rgb": {
+        "1": [
+          198.0,
+          25.0,
+          169.0
+        ],
+        "2": [
+          196.0,
+          26.0,
+          181.0
+        ],
+        "3": [
+          194.0,
+          25.0,
+          180.0
+        ]
+      },
+      "selection_sensitivity": {
+        "strict": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            195.0,
+            28.0,
+            179.0
+          ],
+          "pooled_rgb": [
+            194.0,
+            28.0,
+            177.0
+          ],
+          "n_pixels": 11829
+        },
+        "core_1px": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            196.0,
+            26.0,
+            180.0
+          ],
+          "pooled_rgb": [
+            195.0,
+            25.0,
+            179.0
+          ],
+          "n_pixels": 7227
+        },
+        "core_2px": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            196.0,
+            25.0,
+            180.0
+          ],
+          "pooled_rgb": [
+            196.0,
+            25.0,
+            180.0
+          ],
+          "n_pixels": 2300
+        }
+      },
+      "pooled_pixel_summaries": {
+        "broad": {
+          "n_pixels": 13051,
+          "rgb_p10": [
+            175.0,
+            23.0,
+            161.0
+          ],
+          "rgb_median": [
+            194.0,
+            29.0,
+            177.0
+          ],
+          "rgb_p90": [
+            201.0,
+            80.0,
+            187.0
+          ],
+          "hsv_p10": [
+            302.2901,
+            57.8431,
+            68.6275
+          ],
+          "hsv_median": [
+            305.6471,
+            84.8649,
+            76.0784
+          ],
+          "hsv_p90": [
+            310.1124,
+            88.2653,
+            78.8235
+          ]
+        },
+        "strict": {
+          "n_pixels": 11829,
+          "rgb_p10": [
+            178.0,
+            23.0,
+            163.0
+          ],
+          "rgb_median": [
+            194.0,
+            28.0,
+            177.0
+          ],
+          "rgb_p90": [
+            201.0,
+            61.0,
+            186.0
+          ],
+          "hsv_p10": [
+            302.8916,
+            66.8394,
+            69.8039
+          ],
+          "hsv_median": [
+            305.7485,
+            85.5615,
+            76.0784
+          ],
+          "hsv_p90": [
+            310.1205,
+            88.3249,
+            78.8235
+          ]
+        },
+        "core_1px": {
+          "n_pixels": 7227,
+          "rgb_p10": [
+            189.0,
+            22.0,
+            168.0
+          ],
+          "rgb_median": [
+            195.0,
+            25.0,
+            179.0
+          ],
+          "rgb_p90": [
+            201.0,
+            30.0,
+            185.0
+          ],
+          "hsv_p10": [
+            303.5088,
+            84.2391,
+            74.1176
+          ],
+          "hsv_median": [
+            305.6805,
+            86.9792,
+            76.4706
+          ],
+          "hsv_p90": [
+            309.9429,
+            88.8325,
+            78.8235
+          ]
+        },
+        "core_2px": {
+          "n_pixels": 2300,
+          "rgb_p10": [
+            192.0,
+            22.0,
+            171.0
+          ],
+          "rgb_median": [
+            196.0,
+            25.0,
+            180.0
+          ],
+          "rgb_p90": [
+            200.0,
+            28.0,
+            184.0
+          ],
+          "hsv_p10": [
+            303.8824,
+            85.8633,
+            75.2941
+          ],
+          "hsv_median": [
+            305.5172,
+            87.3711,
+            76.8627
+          ],
+          "hsv_p90": [
+            309.6552,
+            88.8325,
+            78.4314
+          ]
+        },
+        "inner_edge_1px": {
+          "n_pixels": 5824,
+          "rgb_p10": [
+            157.0,
+            32.0,
+            150.0
+          ],
+          "rgb_median": [
+            189.0,
+            51.0,
+            173.0
+          ],
+          "rgb_p90": [
+            204.0,
+            99.0,
+            194.0
+          ],
+          "hsv_p10": [
+            300.6593,
+            49.522,
+            61.9608
+          ],
+          "hsv_median": [
+            305.5352,
+            71.0738,
+            74.1176
+          ],
+          "hsv_p90": [
+            310.3279,
+            83.0662,
+            80.0
+          ]
+        },
+        "outside_ring_1to3px": {
+          "n_pixels": 15802,
+          "rgb_p10": [
+            85.0,
+            75.0,
+            102.0
+          ],
+          "rgb_median": [
+            206.0,
+            186.0,
+            214.0
+          ],
+          "rgb_p90": [
+            246.0,
+            237.0,
+            246.0
+          ],
+          "hsv_p10": [
+            228.0,
+            2.7789,
+            40.0
+          ],
+          "hsv_median": [
+            267.2727,
+            10.7143,
+            84.3137
+          ],
+          "hsv_p90": [
+            305.0,
+            33.3333,
+            97.2549
+          ]
+        }
+      },
+      "source_candidate_ids": [
+        "NIKA-001-02",
+        "NIKA-001-04",
+        "NIKA-001-05",
+        "NIKA-001-09",
+        "NIKA-001-10",
+        "NIKA-001-13",
+        "NIKA-001-14",
+        "NIKA-001-15",
+        "NIKA-001-16",
+        "NIKA-001-17",
+        "NIKA-001-19"
+      ]
+    },
+    {
+      "source": "NIKA-010",
+      "source_path": "/workspace/scratch/64fc1a466651/dyyy_original_source_context_readback_20261002/originals/NIKA-010.png",
+      "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "split": "train",
+      "n_accepted_occurrences": 11,
+      "n_distinct_labels": 11,
+      "source_size": [
+        546,
+        980
+      ],
+      "source_mode": "RGB",
+      "source_embedded_color_profile_present": false,
+      "palette_name": "source_violet_blue",
+      "candidate_rgb_srgb_assumed": [
+        47,
+        12,
+        221
+      ],
+      "candidate_hex_srgb_assumed": "#2F0CDD",
+      "candidate_hsv_deg_pct_pct": [
+        250.0478,
+        94.5701,
+        86.6667
+      ],
+      "candidate_role": "train_supported_candidate",
+      "candidate_estimator": "rounded componentwise median of per-occurrence core_1px RGB medians; equal occurrence weight",
+      "per_glyph_core_median_rgb_range": {
+        "min": [
+          46.0,
+          11.0,
+          220.0
+        ],
+        "max": [
+          47.0,
+          12.0,
+          222.0
+        ]
+      },
+      "line_balanced_core_rgb": {
+        "1": [
+          47.0,
+          12.0,
+          221.0
+        ],
+        "2": [
+          47.0,
+          12.0,
+          221.0
+        ],
+        "3": [
+          47.0,
+          12.0,
+          221.0
+        ]
+      },
+      "selection_sensitivity": {
+        "strict": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            47.0,
+            13.0,
+            219.0
+          ],
+          "pooled_rgb": [
+            47.0,
+            13.0,
+            219.0
+          ],
+          "n_pixels": 6535
+        },
+        "core_1px": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            47.0,
+            12.0,
+            221.0
+          ],
+          "pooled_rgb": [
+            47.0,
+            12.0,
+            221.0
+          ],
+          "n_pixels": 3544
+        },
+        "core_2px": {
+          "n_glyphs": 11,
+          "glyph_balanced_rgb": [
+            47.0,
+            12.0,
+            222.0
+          ],
+          "pooled_rgb": [
+            47.0,
+            12.0,
+            222.0
+          ],
+          "n_pixels": 677
+        }
+      },
+      "pooled_pixel_summaries": {
+        "broad": {
+          "n_pixels": 7299,
+          "rgb_p10": [
+            42.0,
+            10.0,
+            201.0
+          ],
+          "rgb_median": [
+            47.0,
+            13.0,
+            219.0
+          ],
+          "rgb_p90": [
+            64.0,
+            63.0,
+            224.0
+          ],
+          "hsv_p10": [
+            241.5603,
+            74.6437,
+            78.8235
+          ],
+          "hsv_median": [
+            249.5652,
+            93.9252,
+            85.8824
+          ],
+          "hsv_p90": [
+            250.8057,
+            95.4128,
+            87.8431
+          ]
+        },
+        "strict": {
+          "n_pixels": 6535,
+          "rgb_p10": [
+            42.0,
+            10.0,
+            204.0
+          ],
+          "rgb_median": [
+            47.0,
+            13.0,
+            219.0
+          ],
+          "rgb_p90": [
+            53.0,
+            37.0,
+            224.0
+          ],
+          "hsv_p10": [
+            245.4381,
+            82.6809,
+            80.0
+          ],
+          "hsv_median": [
+            249.7143,
+            94.1176,
+            85.8824
+          ],
+          "hsv_p90": [
+            250.8571,
+            95.4545,
+            87.8431
+          ]
+        },
+        "core_1px": {
+          "n_pixels": 3544,
+          "rgb_p10": [
+            44.0,
+            10.0,
+            217.0
+          ],
+          "rgb_median": [
+            47.0,
+            12.0,
+            221.0
+          ],
+          "rgb_p90": [
+            49.0,
+            14.0,
+            225.0
+          ],
+          "hsv_p10": [
+            249.1488,
+            93.722,
+            85.098
+          ],
+          "hsv_median": [
+            250.0935,
+            94.6429,
+            86.6667
+          ],
+          "hsv_p90": [
+            251.0145,
+            95.5357,
+            88.2353
+          ]
+        },
+        "core_2px": {
+          "n_pixels": 677,
+          "rgb_p10": [
+            45.0,
+            10.0,
+            219.0
+          ],
+          "rgb_median": [
+            47.0,
+            12.0,
+            222.0
+          ],
+          "rgb_p90": [
+            49.0,
+            13.0,
+            224.0
+          ],
+          "hsv_p10": [
+            249.5652,
+            94.0909,
+            85.8824
+          ],
+          "hsv_median": [
+            250.237,
+            94.6903,
+            87.0588
+          ],
+          "hsv_p90": [
+            250.8057,
+            95.4955,
+            87.8431
+          ]
+        },
+        "inner_edge_1px": {
+          "n_pixels": 3755,
+          "rgb_p10": [
+            37.0,
+            13.0,
+            195.0
+          ],
+          "rgb_median": [
+            48.0,
+            26.0,
+            212.0
+          ],
+          "rgb_p90": [
+            81.0,
+            84.0,
+            221.0
+          ],
+          "hsv_p10": [
+            234.9206,
+            65.6741,
+            76.4706
+          ],
+          "hsv_median": [
+            247.6364,
+            87.8947,
+            83.1373
+          ],
+          "hsv_p90": [
+            250.2513,
+            94.2376,
+            86.6667
+          ]
+        },
+        "outside_ring_1to3px": {
+          "n_pixels": 10475,
+          "rgb_p10": [
+            23.0,
+            117.0,
+            138.0
+          ],
+          "rgb_median": [
+            122.0,
+            188.0,
+            215.0
+          ],
+          "rgb_p90": [
+            200.0,
+            243.0,
+            249.0
+          ],
+          "hsv_p10": [
+            176.25,
+            12.3457,
+            54.5098
+          ],
+          "hsv_median": [
+            189.8182,
+            32.9193,
+            84.7059
+          ],
+          "hsv_p90": [
+            221.8195,
+            87.5664,
+            98.0392
+          ]
+        }
+      },
+      "source_candidate_ids": [
+        "NIKA-010-03",
+        "NIKA-010-04",
+        "NIKA-010-05",
+        "NIKA-010-06",
+        "NIKA-010-07",
+        "NIKA-010-08",
+        "NIKA-010-11-boundary-r3",
+        "NIKA-010-12-boundary-r3",
+        "NIKA-010-13",
+        "NIKA-010-14",
+        "NIKA-010-15"
+      ]
+    },
+    {
+      "source": "NIKA-011",
+      "source_path": "/workspace/scratch/64fc1a466651/dyyy_original_source_context_readback_20261002/originals/NIKA-011.png",
+      "source_sha256": "519c30a0c2c581f9e89348d8a13d25224bb1f9702e74f9f53a73b1cae68b1b2e",
+      "split": "val",
+      "n_accepted_occurrences": 5,
+      "n_distinct_labels": 4,
+      "source_size": [
+        548,
+        980
+      ],
+      "source_mode": "RGB",
+      "source_embedded_color_profile_present": false,
+      "palette_name": "validation_light_blue",
+      "candidate_rgb_srgb_assumed": [
+        68,
+        142,
+        233
+      ],
+      "candidate_hex_srgb_assumed": "#448EE9",
+      "candidate_hsv_deg_pct_pct": [
+        213.0909,
+        70.8155,
+        91.3725
+      ],
+      "candidate_role": "validation_descriptive_only_do_not_calibrate",
+      "candidate_estimator": "rounded componentwise median of per-occurrence core_1px RGB medians; equal occurrence weight",
+      "per_glyph_core_median_rgb_range": {
+        "min": [
+          68.0,
+          142.0,
+          233.0
+        ],
+        "max": [
+          68.0,
+          142.0,
+          233.0
+        ]
+      },
+      "line_balanced_core_rgb": {
+        "1": [
+          68.0,
+          142.0,
+          233.0
+        ],
+        "2": [
+          68.0,
+          142.0,
+          233.0
+        ]
+      },
+      "selection_sensitivity": {
+        "strict": {
+          "n_glyphs": 5,
+          "glyph_balanced_rgb": [
+            69.0,
+            142.0,
+            232.0
+          ],
+          "pooled_rgb": [
+            69.0,
+            142.0,
+            232.0
+          ],
+          "n_pixels": 5781
+        },
+        "core_1px": {
+          "n_glyphs": 5,
+          "glyph_balanced_rgb": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "pooled_rgb": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "n_pixels": 3664
+        },
+        "core_2px": {
+          "n_glyphs": 5,
+          "glyph_balanced_rgb": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "pooled_rgb": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "n_pixels": 1268
+        }
+      },
+      "pooled_pixel_summaries": {
+        "broad": {
+          "n_pixels": 6519,
+          "rgb_p10": [
+            67.0,
+            140.0,
+            221.0
+          ],
+          "rgb_median": [
+            69.0,
+            142.0,
+            232.0
+          ],
+          "rgb_p90": [
+            89.0,
+            151.0,
+            235.0
+          ],
+          "hsv_p10": [
+            211.1378,
+            59.633,
+            86.6667
+          ],
+          "hsv_median": [
+            213.0909,
+            70.0855,
+            90.9804
+          ],
+          "hsv_p90": [
+            214.2956,
+            71.3043,
+            92.1569
+          ]
+        },
+        "strict": {
+          "n_pixels": 5781,
+          "rgb_p10": [
+            67.0,
+            140.0,
+            225.0
+          ],
+          "rgb_median": [
+            69.0,
+            142.0,
+            232.0
+          ],
+          "rgb_p90": [
+            77.0,
+            145.0,
+            235.0
+          ],
+          "hsv_p10": [
+            211.9737,
+            65.8986,
+            88.2353
+          ],
+          "hsv_median": [
+            213.1677,
+            70.2586,
+            90.9804
+          ],
+          "hsv_p90": [
+            214.3396,
+            71.3675,
+            92.1569
+          ]
+        },
+        "core_1px": {
+          "n_pixels": 3664,
+          "rgb_p10": [
+            67.0,
+            140.0,
+            230.0
+          ],
+          "rgb_median": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "rgb_p90": [
+            71.0,
+            143.0,
+            236.0
+          ],
+          "hsv_p10": [
+            212.3353,
+            69.697,
+            90.1961
+          ],
+          "hsv_median": [
+            213.2143,
+            70.6897,
+            91.3725
+          ],
+          "hsv_p90": [
+            214.1818,
+            71.4894,
+            92.549
+          ]
+        },
+        "core_2px": {
+          "n_pixels": 1268,
+          "rgb_p10": [
+            67.0,
+            141.0,
+            231.0
+          ],
+          "rgb_median": [
+            68.0,
+            142.0,
+            233.0
+          ],
+          "rgb_p90": [
+            70.0,
+            143.0,
+            235.0
+          ],
+          "hsv_p10": [
+            212.4134,
+            69.9571,
+            90.5882
+          ],
+          "hsv_median": [
+            213.1288,
+            70.7627,
+            91.3725
+          ],
+          "hsv_p90": [
+            214.0244,
+            71.3675,
+            92.1569
+          ]
+        },
+        "inner_edge_1px": {
+          "n_pixels": 2855,
+          "rgb_p10": [
+            68.0,
+            140.0,
+            215.0
+          ],
+          "rgb_median": [
+            75.0,
+            143.0,
+            227.0
+          ],
+          "rgb_p90": [
+            102.0,
+            160.0,
+            234.0
+          ],
+          "hsv_p10": [
+            209.8137,
+            53.6893,
+            84.3137
+          ],
+          "hsv_median": [
+            212.7273,
+            66.8103,
+            89.0196
+          ],
+          "hsv_p90": [
+            214.6154,
+            70.5128,
+            91.7647
+          ]
+        },
+        "outside_ring_1to3px": {
+          "n_pixels": 8739,
+          "rgb_p10": [
+            100.0,
+            140.0,
+            146.0
+          ],
+          "rgb_median": [
+            170.0,
+            202.0,
+            214.0
+          ],
+          "rgb_p90": [
+            222.0,
+            239.0,
+            242.0
+          ],
+          "hsv_p10": [
+            165.8824,
+            5.4167,
+            58.0392
+          ],
+          "hsv_median": [
+            187.1429,
+            15.859,
+            84.3137
+          ],
+          "hsv_p90": [
+            207.0423,
+            43.4783,
+            95.2941
+          ]
+        }
+      },
+      "source_candidate_ids": [
+        "NIKA-011-02-context-r2",
+        "NIKA-011-05-context-r2",
+        "NIKA-011-06",
+        "NIKA-011-07-context-r2",
+        "NIKA-011-08-context-r2"
+      ]
+    }
+  ],
+  "limits": [
+    "Two train parent images are two image-color conditions, not 22 independent pen-color trials.",
+    "Keep train magenta and train violet-blue separate; no author-specific universal hue is identified.",
+    "Validation NIKA-011 is descriptive only and must not set or tune a train-only default.",
+    "These are rendered/photo-source colors. No pigment, pen type, lighting, opacity, pressure, physical paper behavior, or source compositing model is identified.",
+    "Anti-aliasing, resampling, compression-like color variation, local background, potential transparency and image color rendering confound edge and body variation.",
+    "The strict predicate selects saturated color and truncates distributions. Erosion checks selection stability, not extraction accuracy.",
+    "Do not reuse edge RGB as an edge palette: it contains background-dependent mixtures. Preserve reviewed glyph coverage and use a selected core color only in a separately verified compositor.",
+    "No extraction, alpha, model, source or production file was changed; no model or image-generation job was run."
+  ]
+}

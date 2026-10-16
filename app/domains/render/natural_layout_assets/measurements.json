@@ -1,0 +1,349 @@
+{
+  "schema": "author-layout-advisory/1",
+  "profile_id": "dyyy-author-layout-source-trace-20261002-v1",
+  "status": "BOUNDED_ENGINEERING_PROPOSAL_NOT_PRODUCT_VALIDATION",
+  "selected_default": "conservative_ordered_source_trace_replay",
+  "independent_random_jitter_selected": false,
+  "fit_split": "train",
+  "coordinate_system": {
+    "axes": "Original parent pixels: x rightward, y downward",
+    "H": "Median normal-body pen-ink height on the source line; runtime uses its unjittered nominal body height.",
+    "measurement_source": "Reviewed original-coordinate boxes and direct original RGB pen-ink support. Normalized128px alphas do not supply layout geometry."
+  },
+  "support": {
+    "n_parents": 2,
+    "n_accepted": 22,
+    "n_distinct_labels": 22,
+    "n_fullbody": 21,
+    "n_lines": 6,
+    "n_slope_eligible_lines": 6,
+    "n_verified_adjacent_pairs": 13
+  },
+  "trace_artifact": {
+    "filename": "ordered_train_layout_sequences.json",
+    "sha256": "1840c49c71f90695b1c91388adb9219cf7b5a5a6fa7224486837ca6f2121cbec",
+    "joint_replay_segments": 6,
+    "joint_replay_fullbody_occurrences": 17,
+    "joint_replay_verified_adjacent_pairs": 11,
+    "longest_joint_replay_segment_occurrences": 4,
+    "eligibility": "Only consecutive accepted normal-body occurrences with measured bottom residuals; omitted or sparse entries end a joint segment."
+  },
+  "observations_train": {
+    "edge_gap_px": {
+      "n": 13,
+      "min": 1.0,
+      "p10": 2.6,
+      "p25": 8.0,
+      "median": 10.0,
+      "p75": 13.0,
+      "p90": 16.4,
+      "max": 18.0,
+      "mean": 9.84615385,
+      "sd_population": 4.94346739,
+      "mad": 3.0
+    },
+    "edge_gap_px_fullbody_only": {
+      "n": 11,
+      "min": 1.0,
+      "p10": 5.0,
+      "p25": 8.0,
+      "median": 10.0,
+      "p75": 12.0,
+      "p90": 17.0,
+      "max": 18.0,
+      "mean": 10.18181818,
+      "sd_population": 4.64793565,
+      "mad": 2.0
+    },
+    "edge_gap_H": {
+      "n": 13,
+      "min": 0.01960784,
+      "p10": 0.05098039,
+      "p25": 0.09876543,
+      "median": 0.14814815,
+      "p75": 0.22033898,
+      "p90": 0.26405229,
+      "max": 0.28813559,
+      "mean": 0.1585365,
+      "sd_population": 0.08031659,
+      "mad": 0.05939902
+    },
+    "edge_gap_H_fullbody_only": {
+      "n": 11,
+      "min": 0.01960784,
+      "p10": 0.09803922,
+      "p25": 0.11111111,
+      "median": 0.14814815,
+      "p75": 0.21394308,
+      "p90": 0.22222222,
+      "max": 0.28813559,
+      "mean": 0.15884082,
+      "sd_population": 0.0714598,
+      "mad": 0.05010893
+    },
+    "left_edge_advance_px": {
+      "n": 13,
+      "min": 23.0,
+      "p10": 43.0,
+      "p25": 49.0,
+      "median": 52.0,
+      "p75": 68.0,
+      "p90": 71.2,
+      "max": 76.0,
+      "mean": 54.92307692,
+      "sd_population": 13.83674894,
+      "mad": 9.0
+    },
+    "left_edge_advance_px_fullbody_only": {
+      "n": 11,
+      "min": 43.0,
+      "p10": 43.0,
+      "p25": 50.0,
+      "median": 59.0,
+      "p75": 68.0,
+      "p90": 72.0,
+      "max": 76.0,
+      "mean": 58.18181818,
+      "sd_population": 11.02738889,
+      "mad": 9.0
+    },
+    "left_edge_advance_H": {
+      "n": 13,
+      "min": 0.45098039,
+      "p10": 0.74197531,
+      "p25": 0.83950617,
+      "median": 0.88888889,
+      "p75": 1.0,
+      "p90": 1.0,
+      "max": 1.28301887,
+      "mean": 0.88901984,
+      "sd_population": 0.18098894,
+      "mad": 0.09259259
+    },
+    "left_edge_advance_H_fullbody_only": {
+      "n": 11,
+      "min": 0.72839506,
+      "p10": 0.7962963,
+      "p25": 0.84132171,
+      "median": 0.88888889,
+      "p75": 0.9691358,
+      "p90": 1.0,
+      "max": 1.28301887,
+      "mean": 0.9187525,
+      "sd_population": 0.13880053,
+      "mad": 0.04938272
+    },
+    "center_advance_px": {
+      "n": 13,
+      "min": 38.5,
+      "p10": 43.4,
+      "p25": 45.0,
+      "median": 54.5,
+      "p75": 62.5,
+      "p90": 66.1,
+      "max": 75.5,
+      "mean": 54.61538462,
+      "sd_population": 10.36665113,
+      "mad": 9.5
+    },
+    "center_advance_px_fullbody_only": {
+      "n": 11,
+      "min": 45.0,
+      "p10": 45.0,
+      "p25": 50.25,
+      "median": 57.0,
+      "p75": 63.5,
+      "p90": 66.5,
+      "max": 75.5,
+      "mean": 57.13636364,
+      "sd_population": 9.20743501,
+      "mad": 7.5
+    },
+    "center_advance_H": {
+      "n": 13,
+      "min": 0.7037037,
+      "p10": 0.75824256,
+      "p25": 0.7962963,
+      "median": 0.88235294,
+      "p75": 0.93209877,
+      "p90": 0.99491525,
+      "max": 1.25471698,
+      "mean": 0.89093969,
+      "sd_population": 0.13498292,
+      "mad": 0.08605664
+    },
+    "center_advance_H_fullbody_only": {
+      "n": 11,
+      "min": 0.7037037,
+      "p10": 0.77160494,
+      "p25": 0.81481481,
+      "median": 0.91176471,
+      "p75": 0.95333752,
+      "p90": 1.0,
+      "max": 1.25471698,
+      "mean": 0.90765243,
+      "sd_population": 0.13915369,
+      "mad": 0.07843137
+    },
+    "height_over_line_median": {
+      "n": 21,
+      "min": 0.61728395,
+      "p10": 0.7962963,
+      "p25": 0.94117647,
+      "median": 1.0,
+      "p75": 1.04938272,
+      "p90": 1.15686275,
+      "max": 1.18867925,
+      "mean": 0.98271254,
+      "sd_population": 0.14604514,
+      "mad": 0.05882353
+    },
+    "width_over_line_median": {
+      "n": 21,
+      "min": 0.703125,
+      "p10": 0.78,
+      "p25": 0.94594595,
+      "median": 1.0,
+      "p75": 1.04545455,
+      "p90": 1.25,
+      "max": 1.54,
+      "mean": 1.01917113,
+      "sd_population": 0.18809171,
+      "mad": 0.05405405
+    },
+    "width_over_line_height": {
+      "n": 21,
+      "min": 0.48148148,
+      "p10": 0.59322034,
+      "p25": 0.62711864,
+      "median": 0.79012346,
+      "p75": 0.95061728,
+      "p90": 1.01960784,
+      "max": 1.11320755,
+      "mean": 0.79743032,
+      "sd_population": 0.18137385,
+      "mad": 0.16300481
+    },
+    "ink_bottom_ols_slope_y_down": {
+      "n": 6,
+      "min": -0.10866911,
+      "p10": -0.09872764,
+      "p25": -0.08294644,
+      "median": -0.05204768,
+      "p75": -0.02397678,
+      "p90": -0.00657029,
+      "max": 0.0059391,
+      "mean": -0.05244854,
+      "sd_population": 0.03950131,
+      "mad": 0.03485325
+    },
+    "bottom_detrended_residual_H": {
+      "n": 21,
+      "min": -0.20330502,
+      "p10": -0.09703504,
+      "p25": -0.04924705,
+      "median": 0.02238502,
+      "p75": 0.04671168,
+      "p90": 0.09044035,
+      "max": 0.14695662,
+      "mean": 0.0,
+      "sd_population": 0.08009238,
+      "mad": 0.04056075
+    },
+    "line_bottom_detrended_sd_H": {
+      "n": 6,
+      "min": 0.0250368,
+      "p10": 0.02995383,
+      "p25": 0.03533618,
+      "median": 0.05330268,
+      "p75": 0.08704793,
+      "p90": 0.12060699,
+      "max": 0.14844115,
+      "mean": 0.0679545,
+      "sd_population": 0.042835,
+      "mad": 0.02334885
+    }
+  },
+  "recommendations": {
+    "preserve_native_glyph_geometry": {
+      "value": true,
+      "reason": "Keep glyph em origin, aspect, terminals and sparse ink placement. Do not normalize tight crop heights or bottom-align every crop."
+    },
+    "isotropic_scale": {
+      "formula": "clamp(1 + 0.35 * (source_height_over_H - 1), 0.92, 1.08)",
+      "min": 0.92,
+      "max": 1.08,
+      "shrink_gain": 0.35,
+      "status": "Engineering shrinkage; source ratios mix morphology and writing variation."
+    },
+    "additional_width_factor": {
+      "default": 1.0,
+      "optional_formula": "clamp(1 + 0.15 * (source_width_over_line_median_width - 1), 0.96, 1.04)",
+      "min": 0.96,
+      "max": 1.04,
+      "enabled_by_default": false,
+      "status": "Optional only after identity QA; native glyph aspect is preserved by default."
+    },
+    "bottom_residual_H": {
+      "formula": "clamp(0.35 * source_detrended_bottom_residual_H, -0.07, 0.07)",
+      "shrink_gain": 0.35,
+      "min": -0.07,
+      "max": 0.07,
+      "line_centering": "After assembling source-backed residuals, subtract line mean and rescale toward zero if necessary to retain maxabs<=0.07. Record centering so replay stays deterministic.",
+      "status": "Visible-bottom proxy, not recovered true baseline."
+    },
+    "edge_gap_H": {
+      "formula": "clamp(0.15 + 0.60 * (source_edge_gap_H - 0.14814815), 0.04, 0.28)",
+      "source_center": 0.14814815,
+      "runtime_center": 0.15,
+      "shrink_gain": 0.6,
+      "min": 0.04,
+      "max": 0.28,
+      "runtime_advance": "Use actual transformed ink width plus this gap; preserve the glyph origin separately."
+    },
+    "whole_line_slope_y_down": {
+      "formula": "clamp(0.40 * selected_source_line_ink_bottom_slope, -0.06, 0.02)",
+      "shrink_gain": 0.4,
+      "min": -0.06,
+      "max": 0.02,
+      "max_end_to_end_change_H": 0.18,
+      "status": "Anatomy-confounded source line rise, conservatively shrunk; displacement cap is engineering safety."
+    },
+    "individual_rotation_degrees": 0,
+    "individual_shear": 0,
+    "segment_boundary": {
+      "observed_gap": null,
+      "applied_neutral_gap_H": 0.15,
+      "status": "At reset/concatenation, a neutral engineering fallback may be used, but it must remain explicitly unobserved in evidence. Never wrap last-to-first or interpolate over a null as if measured."
+    },
+    "sparse_glyph_handling": "Sparse entries are excluded from joint trace calibration; the renderer must still preserve target sparse glyph morphology/em placement generically, without per-character production branches."
+  },
+  "deterministic_replay_contract": {
+    "seed_material": "Compact UTF-8 JSON array [profile_id, style_id, caller_seed, line_index, segment_counter, purpose], ensure_ascii=false.",
+    "selector": "SHA-256(seed_material), first8bytes interpreted big-endian. Select a segment by integer modulo6. Select a suffix phase by a separate purpose hash modulo(n-1), retaining at least2 positions. Log both choices. Other deterministic selection can be used if logged and tested.",
+    "ordered_tuple": "Replay scale proxy, bottom residual and following verified gap from the same source positions in original order. Width factor stays1 by default. Do not independently shuffle dimensions.",
+    "no_wrap": "A phase is a contiguous suffix/prefix consumption, never circular wrap. Stop at the segment end or any null. Choose a fresh segment and mark its boundary as unobserved.",
+    "line_slope": "For a line containing more than one selected segment, derive slope from the first selected source line, shrink and cap it. Do not claim concatenated segment slopes represent one observed source line.",
+    "rounding": "Retain float positions/scales until final raster composition. Overflow handling must preserve relative occurrence transforms.",
+    "record": "Record profile hash, trace artifact hash, seed, selected segment/phase, source occurrence IDs, transforms, boundary fallback markers and collision/overflow checks."
+  },
+  "correlation_claim": "Ordered replay preserves the local coupling present in six short source fragments. It is a design choice, not an estimated author autocorrelation law.",
+  "limits": [
+    "Only two train parents and22 unique train labels; no repeated training label isolates motor variation from morphology.",
+    "Source traces have null holes. Joint replay retains17 full-body positions and11 adjacent pairs across six fragments, max length4.",
+    "Visible-bottom and body-size statistics include stroke-terminal anatomy. Do not copy full observed magnitudes into noise or double-add variation already captured by the model.",
+    "No validation NIKA-011 numbers fit this profile; its repeated 天 pair is descriptive QA only.",
+    "Train broad-versus-strict ink threshold moves each edge≤1px; gap median changes0.148H→0.170H. Crop-box gap median0.081H must not be confused with actual ink gap.",
+    "No evidence supports per-glyph rotation/shear; both remain zero.",
+    "This does not validate unseen-glyph correctness, product naturalness, long-line behavior or generalization."
+  ],
+  "required_product_checks": [
+    "Deterministic replay and evidence readback",
+    "No height equalization during overflow",
+    "Original/model glyph geometry retained",
+    "Repeated and unseen glyph identity checked separately from naturalness",
+    "Sparse strokes/punctuation handled without per-character branches",
+    "No clipping or unreadable collisions",
+    "Null discontinuities and synthetic reset gaps explicitly retained in logs"
+  ]
+}

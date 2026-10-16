@@ -1,0 +1,1 @@
+Hero artwork produced using Snap-X pinned CLI0.2.1; source revision5755c1a1793c46e72180b5d2ee0863746f5ca1b1. Original illustration and typography, no third-party logos/photos. Font rasterization uses Noto Sans SC, Google Noto project (SIL Open Font License1.1); font binary not redistributed.

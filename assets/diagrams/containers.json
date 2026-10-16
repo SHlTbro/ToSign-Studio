@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "ToSign Studio · 运行单元与数据",
+    "locale": "zh-CN",
+    "output": "export/assets/diagrams/containers.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "浏览器应用"
+        },
+        "backend": {
+          "label": "应用进程"
+        },
+        "database": {
+          "label": "持久化存储"
+        },
+        "external": {
+          "label": "人员"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "person",
+      "type": "external",
+      "label": "签图制作者",
+      "sublabel": "操作、审核与导出",
+      "tag": "人员",
+      "pos": [
+        30,
+        210
+      ],
+      "size": [
+        200,
+        82
+      ]
+    },
+    {
+      "id": "web",
+      "type": "frontend",
+      "label": "网页工作台",
+      "sublabel": "Vue 3 · TypeScript",
+      "tag": "浏览器应用",
+      "pos": [
+        340,
+        210
+      ],
+      "size": [
+        200,
+        82
+      ]
+    },
+    {
+      "id": "api",
+      "type": "backend",
+      "label": "业务与生成后端",
+      "sublabel": "FastAPI · 内置工作线程",
+      "tag": "Python 应用",
+      "pos": [
+        670,
+        210
+      ],
+      "size": [
+        200,
+        82
+      ]
+    },
+    {
+      "id": "db",
+      "type": "database",
+      "label": "业务数据库",
+      "sublabel": "账号 · 任务 · 审核 · 索引",
+      "tag": "SQLite",
+      "pos": [
+        670,
+        40
+      ],
+      "size": [
+        200,
+        82
+      ]
+    },
+    {
+      "id": "files",
+      "type": "database",
+      "label": "文件存储",
+      "sublabel": "素材 · 字形 · 模型 · PNG/ZIP",
+      "tag": "本地文件",
+      "pos": [
+        670,
+        410
+      ],
+      "size": [
+        200,
+        82
+      ]
+    },
+    {
+      "id": "ml",
+      "type": "backend",
+      "label": "模型执行进程",
+      "sublabel": "PyTorch · CPU / CUDA",
+      "tag": "可选受控子进程",
+      "pos": [
+        1010,
+        210
+      ],
+      "size": [
+        200,
+        82
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "operate",
+      "from": "person",
+      "to": "web",
+      "label": "操作页面",
+      "variant": "emphasis"
+    },
+    {
+      "id": "request",
+      "from": "web",
+      "to": "api",
+      "label": "JSON / HTTP",
+      "variant": "emphasis"
+    },
+    {
+      "id": "persist",
+      "from": "api",
+      "to": "db",
+      "label": "读写 / SQL",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "store",
+      "from": "api",
+      "to": "files",
+      "label": "读写 / 文件 I/O",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "infer",
+      "from": "api",
+      "to": "ml",
+      "label": "资格有效时启动 / 子进程",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "模块化单体",
+      "items": [
+        "认证、素材、模板、训练、生成、审核与导出属于同一 FastAPI 应用。",
+        "队列由内置工作线程消费；SQLite 持久化任务状态。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "两条字形路径",
+      "items": [
+        "系统字体在后端直接渲染；个人模型经受控进程生成字形，再由后端合成。",
+        "模型须独立核验执行身份；训练完成不等于可发布。"
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "kind": "region",
+      "label": "ToSign Studio · 系统边界",
+      "wraps": [
+        "web",
+        "api",
+        "db",
+        "files",
+        "ml"
+      ],
+      "pad": 24
+    }
+  ]
+}

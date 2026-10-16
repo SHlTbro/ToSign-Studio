@@ -1,0 +1,56 @@
+{
+  "schema": "author-layout-catalog/1",
+  "entries": [
+    {
+      "id": "natural-layout-v1",
+      "enabled": true,
+      "status": "EXACT_AUTHOR_ISOLATED_QA_ENABLED",
+      "owner_user_id": 1,
+      "profile_id": 2,
+      "artifact_id": 1,
+      "artifact_manifest_sha256": "e5de8ee711b77930e1980daaad70d34da6353e35b158123d2ebabe5a070360e0",
+      "adapter_sha256": "aa974b3356352d83bc6bf8f0051b22d80f5766ac867b6df67a252c30ee262fe8",
+      "snapshot_sha256": "428dd33ebd88addea3efd738b6c1eaca40aac48eaa7f9d3317fcd5ac71d7acd3",
+      "runtime_binding": {
+        "schema": "m2-runtime-binding/1",
+        "registration_id": "eaf4477ba0df6e186b35aafcfb6a8a93",
+        "variant_id": "cpu-cp312-v1",
+        "asset_identity_sha256": "e1c75a25d485bd2e7238d5230b0ddbfb459d92f35ef56ac9d89e80012523851d",
+        "dependency_lock_sha256": "b73a4698beeb49951c3760cd766c6a206e21f11abbfb098cfdd17bb1e488036e",
+        "execution_profile_sha256": "ec93385890b402a97567797a94d73d6ccd4cf2bd3b00a574d55e04bff9d3bf6c",
+        "environment_identity_sha256": "472e89e211d22f57d3b59efeb329f300802435faae5794bab96122fdf8f45a28",
+        "capability_receipt_sha256": "471d1868f673ff78223d90634f0fef154d6806c345b7ac0cacf494fe57da35f0",
+        "device": "cpu",
+        "binding_sha256": "edce85e2de5bfa0c1761260663733b63a3c230902d1b59b51d5fb14655a9d9d7"
+      },
+      "profile_filename": "profile.json",
+      "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+      "files": {
+        "profile.json": "98ff897ed77d7affd18fa0e5d8a089bc06301d93746d77a1c7871377d2822b79",
+        "measurements.json": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+        "ordered-traces.json": "1840c49c71f90695b1c91388adb9219cf7b5a5a6fa7224486837ca6f2121cbec",
+        "eligible-segments.json": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+        "layout-review-v3.json": "64446276a00b64f0985ef900734ec2c8267dca580f883ca9b99cec06b70c26be",
+        "punctuation-review.json": "ba69afe88c66368da54a349bb082623cce73d253184b7c86f7a0424619276a04",
+        "layout-review-v4.json": "91edd4f603f3496d33d00023ac40902da87c2d2e59899fd8e19f65819580a473",
+        "logical-whitespace-proof.json": "f1b1e0fcb4500bdb045bed3b5e6ae4e364d2eaa7233f951c4306bbce4f560e86",
+        "arithmetic-parity-r4.json": "3b275a4247dcf03c28cecc2dc09d7a048abf499752b15fad10d71b3401b0fafd"
+      },
+      "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+      "qualification": {
+        "scope": "Optional layout for this exact owned author snapshot and adapter only",
+        "punctuation": "UNSUPPORTED_REJECT_BEFORE_INFERENCE",
+        "model_stroke_learning_claim": false,
+        "new_author_requires_new_fit": true,
+        "joint_trace_only": true,
+        "max_fragment_length": 4,
+        "visual_review_v4": "TARGETED_REPAIR_PREFERRED_WITH_RECORDED_LIMITS",
+        "actual_bound_API": "PENDING",
+        "layout_only_not_new_model_quality": true,
+        "trailing_inline_advance": "NUMERIC_LAYOUT_ONLY_NOT_PIXEL_PROOF",
+        "deployment_scope": "isolated-cloud-QA; release requires separate exact-source API acceptance receipt",
+        "trailing_inline_before_newline": "R4_NUMERIC_CORRECTION_WITH_BYTE_IDENTICAL_PRIOR_PANELS"
+      }
+    }
+  ]
+}

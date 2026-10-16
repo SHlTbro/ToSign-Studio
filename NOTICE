@@ -1,0 +1,15 @@
+ToSign Studio
+
+The project owner's first-party source in this distribution is licensed under
+Apache-2.0. Third-party dependencies, optional models, fonts and user content
+retain their own licenses and are not relicensed by this notice.
+
+This source distribution contains no private training data, model weights,
+checkpoints, user database, personal signing keys, Windows fonts or cosplay photos.
+FontDiffuser is an optional external research dependency; its source and weights
+are not distributed here and this package grants no rights to them.
+
+Showcase graphics include software/font notices under licenses/showcase/ and
+assets/diagrams/licenses/. The original demonstration background is created by
+showcase/demo.py. Its text rasterization uses a locally installed system font;
+no font file is redistributed.

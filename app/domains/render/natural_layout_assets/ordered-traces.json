@@ -1,0 +1,1323 @@
+{
+  "schema": "ordered-author-layout-traces/1",
+  "status": "OBSERVED_TRAIN_ONLY_MORPHOLOGY_AND_LAYOUT_MIXTURE",
+  "normalization_method": "Direct pen-color ink bounds in original image coordinates; no normalized alpha geometry.",
+  "interpretation": [
+    "Height/width ratios are scale proxies, not pure scale noise. Preserve glyph anatomy rather than replacing it with these ratios.",
+    "Detrended bottom residual is an ink-bottom proxy from line-wise OLS on full-body accepted occurrences; sparse 一 has null detrended residual. Its raw measured height and bottom offset are retained for audit, flagged false for normal-body calibration.",
+    "Gap and advance entries are null unless the immediate previous source ordinal is also accepted in the same line and visual adjacency was verified.",
+    "A null creates a discontinuity. Do not bridge, interpolate, rotate or wrap a trace across that boundary as if a source observation existed.",
+    "Seeded phase/trace selection and conservative rescaling are engineering choices. These six short traces do not estimate a general correlation law.",
+    "No NIKA-011 validation values appear here."
+  ],
+  "traces": [
+    {
+      "trace_id": "NIKA-001:line-1",
+      "split": "train",
+      "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "normalization": {
+        "H_original_px": 53.0,
+        "W_median_original_px": 57.0,
+        "x_center_mean_original_px": 283.3333333333333,
+        "ink_bottom_mean_original_px": 909.0,
+        "ink_bottom_median_original_px": 909.0,
+        "ink_bottom_ols_slope_y_down": -0.0386681
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 2,
+          "candidate_id": "NIKA-001-02",
+          "sample_id": "ss_ai_ff00c2af36c444f719ea545618905c40",
+          "label": "养",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.1886792452830188,
+          "observed_width_over_line_median_width": 1.0350877192982457,
+          "observed_width_over_H": 1.1132075471698113,
+          "observed_ink_bottom_offset_from_line_median_H": 0.11320754716981132,
+          "observed_detrended_bottom_residual_H": 0.03234501,
+          "observed_center_x_over_H_relative_line_mean": -2.0911949685534585,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            143,
+            852,
+            59,
+            63
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 3,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        },
+        {
+          "source_occurrence_ordinal": 4,
+          "candidate_id": "NIKA-001-04",
+          "sample_id": "ss_ai_4d3bb8ae9cb92600d31bbe7ff6818dec",
+          "label": "鱼",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.9245283018867925,
+          "observed_width_over_line_median_width": 1.0,
+          "observed_width_over_H": 1.0754716981132075,
+          "observed_ink_bottom_offset_from_line_median_H": -0.11320754716981132,
+          "observed_detrended_bottom_residual_H": -0.09703504,
+          "observed_center_x_over_H_relative_line_mean": 0.4182389937106922,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            277,
+            854,
+            57,
+            49
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 5,
+          "candidate_id": "NIKA-001-05",
+          "sample_id": "ss_ai_2650c7e0ed5dc01859d560942a373a35",
+          "label": "叫",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 0.9473684210526315,
+          "observed_width_over_H": 1.0188679245283019,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": 0.06469003,
+          "observed_center_x_over_H_relative_line_mean": 1.6729559748427676,
+          "edge_gap_from_previous_H": 0.20754717,
+          "left_edge_advance_from_previous_H": 1.28301887,
+          "center_advance_from_previous_H": 1.25471698,
+          "original_ink_bbox_xywh": [
+            345,
+            856,
+            54,
+            53
+          ],
+          "missing_reason": null
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-001-02",
+          null,
+          "NIKA-001-04",
+          "NIKA-001-05"
+        ],
+        "source_occurrence_ordinal": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "accepted": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "normal_body_calibration": [
+          true,
+          false,
+          true,
+          true
+        ],
+        "observed_height_over_H": [
+          1.1886792452830188,
+          null,
+          0.9245283018867925,
+          1.0
+        ],
+        "observed_width_over_line_median_width": [
+          1.0350877192982457,
+          null,
+          1.0,
+          0.9473684210526315
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.11320754716981132,
+          null,
+          -0.11320754716981132,
+          0.0
+        ],
+        "observed_detrended_bottom_residual_H": [
+          0.03234501,
+          null,
+          -0.09703504,
+          0.06469003
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          false,
+          false,
+          true
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          null,
+          null,
+          0.20754717
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          null,
+          null,
+          1.28301887
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          null,
+          null,
+          1.25471698
+        ]
+      }
+    },
+    {
+      "trace_id": "NIKA-001:line-2",
+      "split": "train",
+      "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "normalization": {
+        "H_original_px": 81.0,
+        "W_median_original_px": 50.0,
+        "x_center_mean_original_px": 513.0,
+        "ink_bottom_mean_original_px": 1009.6666666666666,
+        "ink_bottom_median_original_px": 1015.0,
+        "ink_bottom_ols_slope_y_down": 0.0059391
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 9,
+          "candidate_id": "NIKA-001-09",
+          "sample_id": "ss_ai_89b47bb3467b484d1c2f7af5f191e131",
+          "label": "人",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 1.0,
+          "observed_width_over_H": 0.6172839506172839,
+          "observed_ink_bottom_offset_from_line_median_H": 0.07407407407407407,
+          "observed_detrended_bottom_residual_H": 0.14695662,
+          "observed_center_x_over_H_relative_line_mean": -1.1851851851851851,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            392,
+            940,
+            50,
+            81
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 10,
+          "candidate_id": "NIKA-001-10",
+          "sample_id": "ss_ai_4f63628e5ab1992bcf3ca9227a6a203f",
+          "label": "生",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.6172839506172839,
+          "observed_width_over_line_median_width": 0.78,
+          "observed_width_over_H": 0.48148148148148145,
+          "observed_ink_bottom_offset_from_line_median_H": -0.2716049382716049,
+          "observed_detrended_bottom_residual_H": -0.20330502,
+          "observed_center_x_over_H_relative_line_mean": -0.41358024691358025,
+          "edge_gap_from_previous_H": 0.22222222,
+          "left_edge_advance_from_previous_H": 0.83950617,
+          "center_advance_from_previous_H": 0.77160494,
+          "original_ink_bbox_xywh": [
+            460,
+            943,
+            39,
+            50
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 11,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        },
+        {
+          "source_occurrence_ordinal": 12,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        },
+        {
+          "source_occurrence_ordinal": 13,
+          "candidate_id": "NIKA-001-13",
+          "sample_id": "ss_ai_90d5dc2c521ca843c19cd0a089580a0e",
+          "label": "野",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.123456790123457,
+          "observed_width_over_line_median_width": 1.54,
+          "observed_width_over_H": 0.9506172839506173,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": 0.0563484,
+          "observed_center_x_over_H_relative_line_mean": 1.5987654320987654,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            604,
+            924,
+            77,
+            91
+          ],
+          "missing_reason": null
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-001-09",
+          "NIKA-001-10",
+          null,
+          null,
+          "NIKA-001-13"
+        ],
+        "source_occurrence_ordinal": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "accepted": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "normal_body_calibration": [
+          true,
+          true,
+          false,
+          false,
+          true
+        ],
+        "observed_height_over_H": [
+          1.0,
+          0.6172839506172839,
+          null,
+          null,
+          1.123456790123457
+        ],
+        "observed_width_over_line_median_width": [
+          1.0,
+          0.78,
+          null,
+          null,
+          1.54
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.07407407407407407,
+          -0.2716049382716049,
+          null,
+          null,
+          0.0
+        ],
+        "observed_detrended_bottom_residual_H": [
+          0.14695662,
+          -0.20330502,
+          null,
+          null,
+          0.0563484
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          true,
+          false,
+          false,
+          false
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          0.22222222,
+          null,
+          null,
+          null
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          0.83950617,
+          null,
+          null,
+          null
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          0.77160494,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "trace_id": "NIKA-001:line-3",
+      "split": "train",
+      "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "normalization": {
+        "H_original_px": 81.0,
+        "W_median_original_px": 64.0,
+        "x_center_mean_original_px": 487.5,
+        "ink_bottom_mean_original_px": 1113.8,
+        "ink_bottom_median_original_px": 1109.0,
+        "ink_bottom_ols_slope_y_down": -0.06542727
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 14,
+          "candidate_id": "NIKA-001-14",
+          "sample_id": "ss_ai_34966bba69f92853ec01ba71972d6ed4",
+          "label": "愿",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.1728395061728396,
+          "observed_width_over_line_median_width": 1.015625,
+          "observed_width_over_H": 0.8024691358024691,
+          "observed_ink_bottom_offset_from_line_median_H": 0.20987654320987653,
+          "observed_detrended_bottom_residual_H": 0.02945568,
+          "observed_center_x_over_H_relative_line_mean": -1.8518518518518519,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            305,
+            1031,
+            65,
+            95
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 15,
+          "candidate_id": "NIKA-001-15",
+          "sample_id": "ss_ai_842af8aecf2b978dd59f98a15b395d2f",
+          "label": "你",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 1.0,
+          "observed_width_over_H": 0.7901234567901234,
+          "observed_ink_bottom_offset_from_line_median_H": 0.20987654320987653,
+          "observed_detrended_bottom_residual_H": 0.09044035,
+          "observed_center_x_over_H_relative_line_mean": -0.9197530864197531,
+          "edge_gap_from_previous_H": 0.13580247,
+          "left_edge_advance_from_previous_H": 0.9382716,
+          "center_advance_from_previous_H": 0.93209877,
+          "original_ink_bbox_xywh": [
+            381,
+            1045,
+            64,
+            81
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 16,
+          "candidate_id": "NIKA-001-16",
+          "sample_id": "ss_ai_9f2db0d47c676f2bac62fd51c4c97a8f",
+          "label": "自",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.8518518518518519,
+          "observed_width_over_line_median_width": 0.765625,
+          "observed_width_over_H": 0.6049382716049383,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": -0.0673367,
+          "observed_center_x_over_H_relative_line_mean": -0.12345679012345678,
+          "edge_gap_from_previous_H": 0.09876543,
+          "left_edge_advance_from_previous_H": 0.88888889,
+          "center_advance_from_previous_H": 0.7962963,
+          "original_ink_bbox_xywh": [
+            453,
+            1040,
+            49,
+            69
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 17,
+          "candidate_id": "NIKA-001-17",
+          "sample_id": "ss_ai_b52aaa06ba5b37e3479f38d0e6d13f12",
+          "label": "由",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.6790123456790124,
+          "observed_width_over_line_median_width": 0.703125,
+          "observed_width_over_H": 0.5555555555555556,
+          "observed_ink_bottom_offset_from_line_median_H": -0.12345679012345678,
+          "observed_detrended_bottom_residual_H": -0.14475208,
+          "observed_center_x_over_H_relative_line_mean": 0.5802469135802469,
+          "edge_gap_from_previous_H": 0.12345679,
+          "left_edge_advance_from_previous_H": 0.72839506,
+          "center_advance_from_previous_H": 0.7037037,
+          "original_ink_bbox_xywh": [
+            512,
+            1044,
+            45,
+            55
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 18,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        },
+        {
+          "source_occurrence_ordinal": 19,
+          "candidate_id": "NIKA-001-19",
+          "sample_id": "ss_ai_c8fcd599d34225c51372d3a3ed73e77a",
+          "label": "风",
+          "accepted": true,
+          "source_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0493827160493827,
+          "observed_width_over_line_median_width": 1.25,
+          "observed_width_over_H": 0.9876543209876543,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": 0.09219274,
+          "observed_center_x_over_H_relative_line_mean": 2.314814814814815,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            635,
+            1024,
+            80,
+            85
+          ],
+          "missing_reason": null
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-001-14",
+          "NIKA-001-15",
+          "NIKA-001-16",
+          "NIKA-001-17",
+          null,
+          "NIKA-001-19"
+        ],
+        "source_occurrence_ordinal": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "accepted": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "normal_body_calibration": [
+          true,
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "observed_height_over_H": [
+          1.1728395061728396,
+          1.0,
+          0.8518518518518519,
+          0.6790123456790124,
+          null,
+          1.0493827160493827
+        ],
+        "observed_width_over_line_median_width": [
+          1.015625,
+          1.0,
+          0.765625,
+          0.703125,
+          null,
+          1.25
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.20987654320987653,
+          0.20987654320987653,
+          0.0,
+          -0.12345679012345678,
+          null,
+          0.0
+        ],
+        "observed_detrended_bottom_residual_H": [
+          0.02945568,
+          0.09044035,
+          -0.0673367,
+          -0.14475208,
+          null,
+          0.09219274
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          0.13580247,
+          0.09876543,
+          0.12345679,
+          null,
+          null
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          0.9382716,
+          0.88888889,
+          0.72839506,
+          null,
+          null
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          0.93209877,
+          0.7962963,
+          0.7037037,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "trace_id": "NIKA-010:line-1",
+      "split": "train",
+      "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "normalization": {
+        "H_original_px": 54.0,
+        "W_median_original_px": 39.0,
+        "x_center_mean_original_px": 185.5,
+        "ink_bottom_mean_original_px": 718.3333333333334,
+        "ink_bottom_median_original_px": 716.0,
+        "ink_bottom_ols_slope_y_down": -0.10866911
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 3,
+          "candidate_id": "NIKA-010-03",
+          "sample_id": "ss_ai_398c54f904604479067cbbd58cb81d2a",
+          "label": "正",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 0.8974358974358975,
+          "observed_width_over_H": 0.6481481481481481,
+          "observed_ink_bottom_offset_from_line_median_H": 0.16666666666666666,
+          "observed_detrended_bottom_residual_H": 0.02686203,
+          "observed_center_x_over_H_relative_line_mean": -0.8888888888888888,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            120,
+            671,
+            35,
+            54
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 4,
+          "candidate_id": "NIKA-010-04",
+          "sample_id": "ss_ai_c3f97a0508d95e4873b9f7a165d91184",
+          "label": "太",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.7962962962962963,
+          "observed_width_over_line_median_width": 1.0,
+          "observed_width_over_H": 0.7222222222222222,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": -0.04924705,
+          "observed_center_x_over_H_relative_line_mean": -0.05555555555555555,
+          "edge_gap_from_previous_H": 0.14814815,
+          "left_edge_advance_from_previous_H": 0.7962963,
+          "center_advance_from_previous_H": 0.83333333,
+          "original_ink_bbox_xywh": [
+            163,
+            673,
+            39,
+            43
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 5,
+          "candidate_id": "NIKA-010-05",
+          "sample_id": "ss_ai_f69e1ed18764f1b81cf1d2bcf45a2413",
+          "label": "控",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 1.2564102564102564,
+          "observed_width_over_H": 0.9074074074074074,
+          "observed_ink_bottom_offset_from_line_median_H": -0.037037037037037035,
+          "observed_detrended_bottom_residual_H": 0.02238502,
+          "observed_center_x_over_H_relative_line_mean": 0.9444444444444444,
+          "edge_gap_from_previous_H": 0.18518519,
+          "left_edge_advance_from_previous_H": 0.90740741,
+          "center_advance_from_previous_H": 1.0,
+          "original_ink_bbox_xywh": [
+            212,
+            660,
+            49,
+            54
+          ],
+          "missing_reason": null
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-010-03",
+          "NIKA-010-04",
+          "NIKA-010-05"
+        ],
+        "source_occurrence_ordinal": [
+          3,
+          4,
+          5
+        ],
+        "accepted": [
+          true,
+          true,
+          true
+        ],
+        "normal_body_calibration": [
+          true,
+          true,
+          true
+        ],
+        "observed_height_over_H": [
+          1.0,
+          0.7962962962962963,
+          1.0
+        ],
+        "observed_width_over_line_median_width": [
+          0.8974358974358975,
+          1.0,
+          1.2564102564102564
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.16666666666666666,
+          0.0,
+          -0.037037037037037035
+        ],
+        "observed_detrended_bottom_residual_H": [
+          0.02686203,
+          -0.04924705,
+          0.02238502
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          true,
+          true
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          0.14814815,
+          0.18518519
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          0.7962963,
+          0.90740741
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          0.83333333,
+          1.0
+        ]
+      }
+    },
+    {
+      "trace_id": "NIKA-010:line-2",
+      "split": "train",
+      "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "normalization": {
+        "H_original_px": 59.0,
+        "W_median_original_px": 37.0,
+        "x_center_mean_original_px": 181.0,
+        "ink_bottom_mean_original_px": 847.0,
+        "ink_bottom_median_original_px": 849.0,
+        "ink_bottom_ols_slope_y_down": -0.08878616
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 6,
+          "candidate_id": "NIKA-010-06",
+          "sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+          "label": "史",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.9830508474576272,
+          "observed_width_over_line_median_width": 0.9459459459459459,
+          "observed_width_over_H": 0.5932203389830508,
+          "observed_ink_bottom_offset_from_line_median_H": 0.03389830508474576,
+          "observed_detrended_bottom_residual_H": -0.01722743,
+          "observed_center_x_over_H_relative_line_mean": -0.9576271186440678,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            107,
+            793,
+            35,
+            58
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 7,
+          "candidate_id": "NIKA-010-07",
+          "sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+          "label": "莱",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.152542372881356,
+          "observed_width_over_line_median_width": 1.2432432432432432,
+          "observed_width_over_H": 0.7796610169491526,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0,
+          "observed_detrended_bottom_residual_H": 0.03540316,
+          "observed_center_x_over_H_relative_line_mean": 0.01694915254237288,
+          "edge_gap_from_previous_H": 0.28813559,
+          "left_edge_advance_from_previous_H": 0.88135593,
+          "center_advance_from_previous_H": 0.97457627,
+          "original_ink_bbox_xywh": [
+            159,
+            781,
+            46,
+            68
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 8,
+          "candidate_id": "NIKA-010-08",
+          "sample_id": "ss_ai_60693d7579149ce5c96c66389fad13f6",
+          "label": "克",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0,
+          "observed_width_over_line_median_width": 1.0,
+          "observed_width_over_H": 0.6271186440677966,
+          "observed_ink_bottom_offset_from_line_median_H": -0.13559322033898305,
+          "observed_detrended_bottom_residual_H": -0.01817573,
+          "observed_center_x_over_H_relative_line_mean": 0.940677966101695,
+          "edge_gap_from_previous_H": 0.22033898,
+          "left_edge_advance_from_previous_H": 1.0,
+          "center_advance_from_previous_H": 0.92372881,
+          "original_ink_bbox_xywh": [
+            218,
+            782,
+            37,
+            59
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 9,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        },
+        {
+          "source_occurrence_ordinal": 10,
+          "candidate_id": null,
+          "sample_id": null,
+          "label": null,
+          "accepted": false,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": false,
+          "observed_height_over_H": null,
+          "observed_width_over_line_median_width": null,
+          "observed_width_over_H": null,
+          "observed_ink_bottom_offset_from_line_median_H": null,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": null,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": null,
+          "missing_reason": "Source occurrence is not accepted in the canonical snapshot; no geometry or spacing is inferred."
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-010-06",
+          "NIKA-010-07",
+          "NIKA-010-08",
+          null,
+          null
+        ],
+        "source_occurrence_ordinal": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "accepted": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "normal_body_calibration": [
+          true,
+          true,
+          true,
+          false,
+          false
+        ],
+        "observed_height_over_H": [
+          0.9830508474576272,
+          1.152542372881356,
+          1.0,
+          null,
+          null
+        ],
+        "observed_width_over_line_median_width": [
+          0.9459459459459459,
+          1.2432432432432432,
+          1.0,
+          null,
+          null
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.03389830508474576,
+          0.0,
+          -0.13559322033898305,
+          null,
+          null
+        ],
+        "observed_detrended_bottom_residual_H": [
+          -0.01722743,
+          0.03540316,
+          -0.01817573,
+          null,
+          null
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          true,
+          true,
+          false,
+          false
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          0.28813559,
+          0.22033898,
+          null,
+          null
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          0.88135593,
+          1.0,
+          null,
+          null
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          0.97457627,
+          0.92372881,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "trace_id": "NIKA-010:line-3",
+      "split": "train",
+      "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "normalization": {
+        "H_original_px": 51.0,
+        "W_median_original_px": 44.0,
+        "x_center_mean_original_px": 305.375,
+        "ink_bottom_mean_original_px": 935.0,
+        "ink_bottom_median_original_px": 935.0,
+        "ink_bottom_ols_slope_y_down": -0.01907967
+      },
+      "positions": [
+        {
+          "source_occurrence_ordinal": 11,
+          "candidate_id": "NIKA-010-11-boundary-r3",
+          "sample_id": "ss_ai_5ac488c8f6ac01ee63c18b7b6596ba13",
+          "label": "永",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": false,
+          "verified_adjacency_to_previous_ordinal": false,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.1568627450980393,
+          "observed_width_over_line_median_width": 0.9545454545454546,
+          "observed_width_over_H": 0.8235294117647058,
+          "observed_ink_bottom_offset_from_line_median_H": 0.0196078431372549,
+          "observed_detrended_bottom_residual_H": -0.00933901,
+          "observed_center_x_over_H_relative_line_mean": -1.517156862745098,
+          "edge_gap_from_previous_H": null,
+          "left_edge_advance_from_previous_H": null,
+          "center_advance_from_previous_H": null,
+          "original_ink_bbox_xywh": [
+            207,
+            877,
+            42,
+            59
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 12,
+          "candidate_id": "NIKA-010-12-boundary-r3",
+          "sample_id": "ss_ai_8d9450c5e17e14a68f77556db6340b5a",
+          "label": "远",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.9411764705882353,
+          "observed_width_over_line_median_width": 1.0454545454545454,
+          "observed_width_over_H": 0.9019607843137255,
+          "observed_ink_bottom_offset_from_line_median_H": 0.058823529411764705,
+          "observed_detrended_bottom_residual_H": 0.04671168,
+          "observed_center_x_over_H_relative_line_mean": -0.6348039215686274,
+          "edge_gap_from_previous_H": 0.01960784,
+          "left_edge_advance_from_previous_H": 0.84313725,
+          "center_advance_from_previous_H": 0.88235294,
+          "original_ink_bbox_xywh": [
+            250,
+            890,
+            46,
+            48
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 13,
+          "candidate_id": "NIKA-010-13",
+          "sample_id": "ss_ai_bd3d722c2f381ffb76433819911fb6c6",
+          "label": "在",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 0.9803921568627451,
+          "observed_width_over_line_median_width": 0.8409090909090909,
+          "observed_width_over_H": 0.7254901960784313,
+          "observed_ink_bottom_offset_from_line_median_H": -0.058823529411764705,
+          "observed_detrended_bottom_residual_H": -0.05353921,
+          "observed_center_x_over_H_relative_line_mean": 0.2769607843137255,
+          "edge_gap_from_previous_H": 0.09803922,
+          "left_edge_advance_from_previous_H": 1.0,
+          "center_advance_from_previous_H": 0.91176471,
+          "original_ink_bbox_xywh": [
+            301,
+            882,
+            37,
+            50
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 14,
+          "candidate_id": "NIKA-010-14",
+          "sample_id": "ss_ai_08be1958d80000e66e7aead28805dfdd",
+          "label": "一",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": false,
+          "observed_height_over_H": 0.11764705882352941,
+          "observed_width_over_line_median_width": 0.4772727272727273,
+          "observed_width_over_H": 0.4117647058823529,
+          "observed_ink_bottom_offset_from_line_median_H": -0.5490196078431373,
+          "observed_detrended_bottom_residual_H": null,
+          "observed_center_x_over_H_relative_line_mean": 1.1200980392156863,
+          "edge_gap_from_previous_H": 0.2745098,
+          "left_edge_advance_from_previous_H": 1.0,
+          "center_advance_from_previous_H": 0.84313725,
+          "original_ink_bbox_xywh": [
+            352,
+            901,
+            21,
+            6
+          ],
+          "missing_reason": null
+        },
+        {
+          "source_occurrence_ordinal": 15,
+          "candidate_id": "NIKA-010-15",
+          "sample_id": "ss_ai_d0c6d6c1c82e18adfba5bcc53039e47e",
+          "label": "起",
+          "accepted": true,
+          "source_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+          "has_previous_source_occurrence_in_trace": true,
+          "verified_adjacency_to_previous_ordinal": true,
+          "normal_body_calibration": true,
+          "observed_height_over_H": 1.0196078431372548,
+          "observed_width_over_line_median_width": 1.1818181818181819,
+          "observed_width_over_H": 1.0196078431372548,
+          "observed_ink_bottom_offset_from_line_median_H": -0.0196078431372549,
+          "observed_detrended_bottom_residual_H": 0.01616654,
+          "observed_center_x_over_H_relative_line_mean": 1.875,
+          "edge_gap_from_previous_H": 0.03921569,
+          "left_edge_advance_from_previous_H": 0.45098039,
+          "center_advance_from_previous_H": 0.75490196,
+          "original_ink_bbox_xywh": [
+            375,
+            882,
+            52,
+            52
+          ],
+          "missing_reason": null
+        }
+      ],
+      "aligned_sequences": {
+        "candidate_id": [
+          "NIKA-010-11-boundary-r3",
+          "NIKA-010-12-boundary-r3",
+          "NIKA-010-13",
+          "NIKA-010-14",
+          "NIKA-010-15"
+        ],
+        "source_occurrence_ordinal": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "accepted": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "normal_body_calibration": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "observed_height_over_H": [
+          1.1568627450980393,
+          0.9411764705882353,
+          0.9803921568627451,
+          0.11764705882352941,
+          1.0196078431372548
+        ],
+        "observed_width_over_line_median_width": [
+          0.9545454545454546,
+          1.0454545454545454,
+          0.8409090909090909,
+          0.4772727272727273,
+          1.1818181818181819
+        ],
+        "observed_ink_bottom_offset_from_line_median_H": [
+          0.0196078431372549,
+          0.058823529411764705,
+          -0.058823529411764705,
+          -0.5490196078431373,
+          -0.0196078431372549
+        ],
+        "observed_detrended_bottom_residual_H": [
+          -0.00933901,
+          0.04671168,
+          -0.05353921,
+          null,
+          0.01616654
+        ],
+        "verified_adjacency_to_previous_ordinal": [
+          false,
+          true,
+          true,
+          true,
+          true
+        ],
+        "edge_gap_from_previous_H": [
+          null,
+          0.01960784,
+          0.09803922,
+          0.2745098,
+          0.03921569
+        ],
+        "left_edge_advance_from_previous_H": [
+          null,
+          0.84313725,
+          1.0,
+          1.0,
+          0.45098039
+        ],
+        "center_advance_from_previous_H": [
+          null,
+          0.88235294,
+          0.91176471,
+          0.84313725,
+          0.75490196
+        ]
+      }
+    }
+  ]
+}

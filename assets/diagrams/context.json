@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "ToSign Studio · 用户与系统边界",
+    "locale": "zh-CN",
+    "output": "export/assets/diagrams/context.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "backend": {
+          "label": "软件系统"
+        },
+        "external": {
+          "label": "人员"
+        }
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "creator",
+      "type": "external",
+      "icon": "person",
+      "label": "签图制作者",
+      "sublabel": "导入素材 · 核对成品",
+      "tag": "人员",
+      "pos": [
+        40,
+        110
+      ],
+      "size": [
+        190,
+        82
+      ]
+    },
+    {
+      "id": "studio",
+      "type": "backend",
+      "label": "ToSign Studio",
+      "sublabel": "排版生图 · 质检导出",
+      "tag": "软件系统",
+      "pos": [
+        450,
+        110
+      ],
+      "size": [
+        220,
+        82
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "create-and-review",
+      "from": "creator",
+      "to": "studio",
+      "label": "浏览器操作 / HTTP",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "面向谁",
+      "items": [
+        "为需要制作多份署名祝福图的人，保留底图并批量排版文字。"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "当前边界",
+      "items": [
+        "本机应用；未接入抖音发布。新训练模型仍需评估与发布。"
+      ]
+    }
+  ]
+}

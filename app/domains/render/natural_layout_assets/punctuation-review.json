@@ -1,0 +1,155 @@
+{
+  "schema": "actual-bound-cpu-punctuation-ai-visual-review/1",
+  "review_actor": "AI",
+  "human_review_performed": false,
+  "owner_confirmed": false,
+  "reviewer": {
+    "provider": "OpenAI",
+    "model_id": "gpt-6-astra",
+    "reviewer_kind": "vision_model"
+  },
+  "reviewer_task_id": "/root/review_fresh_candidate_glyphs",
+  "evidence_id": "cpu-product-punctuation-v1-actual-pixels-20261002",
+  "review_started_at_utc": "2026-10-02T15:16:56+00:00",
+  "visual_judgment_completed_at_utc": "2026-10-02T15:18:45+00:00",
+  "reviewed_at_utc": "2026-10-02T15:18:45+00:00",
+  "request_path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/VISUAL-REVIEW-REQUEST.json",
+  "request_sha256": "f7ba45bea302b7095f54333379930393868aa325afe0920f558e350bda68a8e5",
+  "scope": "Only the named request, two original PNGs, their exact inference receipts, and the composed render were read as review evidence. Display-only derivatives are included. No generation, application change, source edit, or acceptance import was performed.",
+  "prior_familiarity": "Reviewer has prior familiarity with the author input/candidate review and a separate frozen blinded layout comparison. This is a fresh inspection of these two exact punctuation outputs, not a blind identity or model-condition test.",
+  "method": [
+    "Verified request and all five named evidence-file SHA-256 values.",
+    "Verified receipt target, seed, and output PNG hash against each request entry. Receipt success/eligibility flags were not treated as visual correctness.",
+    "Opened each exact native 96x96 RGBA PNG with the image tool. Transparent black ink was not legible against the raw tool backdrop, so inspected white-composited nearest-neighbor 8x display copies without modifying source assets.",
+    "Inspected the exact 1000x400 composed render.",
+    "Made independent visual decisions without invoking an inference or image-generation model."
+  ],
+  "evidence_assets": [
+    {
+      "kind": "glyph",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+FF0C/glyph.png",
+      "sha256": "a85f19c18a846ed60fecf56abbbcba5123905bf67ae1dc839d3f2c341553491f"
+    },
+    {
+      "kind": "receipt",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+FF0C/inference.json",
+      "sha256": "8f1c6f1bd18adb257b18dad442bc7e7606947c677f548ee9ccb366e5e524ff17"
+    },
+    {
+      "kind": "glyph",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+3002/glyph.png",
+      "sha256": "f849cbb41eac9d80a4c874139619223ff7fec7bcaeb0263f7ca03fff67e7e35e"
+    },
+    {
+      "kind": "receipt",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+3002/inference.json",
+      "sha256": "45b3b23ec3a2a7e634bca203182e9076824d5cd20f3f2b13ad12c3a65ecb3e78"
+    },
+    {
+      "kind": "composed_render",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/render.png",
+      "sha256": "638f090545708e9db4a64a37436bc3a57b62742840f4a0cbfffcce1053752883",
+      "dimensions": [
+        1000,
+        400
+      ]
+    }
+  ],
+  "display_only_derivatives": [
+    {
+      "path": "/workspace/scratch/64fc1a466651/dyyy_punctuation_visual_review_20261002/display_only/U+3002-white-8x.png",
+      "sha256": "1331b150ee90f2f81900e7d742552e4f85b34a8918eb9fbb6e5aa13680d81e0f",
+      "method": "Original RGBA alpha-composited on white, whole 96x96 canvas enlarged 8x with nearest-neighbor. Display-only derivative; source bytes unchanged."
+    },
+    {
+      "path": "/workspace/scratch/64fc1a466651/dyyy_punctuation_visual_review_20261002/display_only/U+FF0C-white-8x.png",
+      "sha256": "600d47ed57f9259962dd388e0ceebc35c409dbdeb0754a805f0666b76ed788ce",
+      "method": "Original RGBA alpha-composited on white, whole 96x96 canvas enlarged 8x with nearest-neighbor. Display-only derivative; source bytes unchanged."
+    }
+  ],
+  "candidates": [
+    {
+      "expected_char": "，",
+      "unicode": "U+FF0C",
+      "source_declared_by_receipt": "M2",
+      "seed": 4065137249,
+      "glyph_path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+FF0C/glyph.png",
+      "glyph_sha256": "a85f19c18a846ed60fecf56abbbcba5123905bf67ae1dc839d3f2c341553491f",
+      "receipt_path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+FF0C/inference.json",
+      "receipt_sha256": "8f1c6f1bd18adb257b18dad442bc7e7606947c677f548ee9ccb366e5e524ff17",
+      "native_image_size": [
+        96,
+        96
+      ],
+      "pixels_actually_inspected": true,
+      "original_rgba_and_white_display_inspected": true,
+      "render_inspected": true,
+      "review_status": "AI_REJECT",
+      "accepted_identity": null,
+      "production_use_approved": false,
+      "canvas_clipping": "NO_VISIBLE_CLIPPING",
+      "collision": "NONE_VISIBLE_IN_SUPPLIED_RENDER",
+      "no_alternative_character_label_assigned": true,
+      "expected_identity_result": "UNCERTAIN_NOT_ACCEPTED",
+      "confidence_in_rejection": 0.94,
+      "observed_shape": "A small solid oblique oval/dash, slanting down toward the right, with no clearly distinct descending comma tail or hook.",
+      "identity_rationale": "The mark can be read as an oblique dot/dash rather than an unambiguous comma. A writer could use a short stroke as a comma in context, but this isolated generated form and the supplied punctuation-only composition do not establish a sufficiently readable comma identity.",
+      "stroke_integrity": "COMMA_TAIL_NOT_DISTINGUISHABLE",
+      "uncertainty": "Identity is ambiguous, rather than a proven alternative character. No alternative label is assigned. Rejection is a conservative current quality-gate decision, not a claim that no reader could infer a comma from context.",
+      "recommendation": "Exclude this exact output from confidently approved comma coverage. A changed output or additional legitimate contextual evidence would need its own review; do not inherit acceptance from the receipt."
+    },
+    {
+      "expected_char": "。",
+      "unicode": "U+3002",
+      "source_declared_by_receipt": "M2",
+      "seed": 653849714,
+      "glyph_path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+3002/glyph.png",
+      "glyph_sha256": "f849cbb41eac9d80a4c874139619223ff7fec7bcaeb0263f7ca03fff67e7e35e",
+      "receipt_path": "/workspace/scratch/64fc1a466651/dyyy_cloud_native_intake_20261002/evidence/cpu-product-punctuation-v1/U+3002/inference.json",
+      "receipt_sha256": "45b3b23ec3a2a7e634bca203182e9076824d5cd20f3f2b13ad12c3a65ecb3e78",
+      "native_image_size": [
+        96,
+        96
+      ],
+      "pixels_actually_inspected": true,
+      "original_rgba_and_white_display_inspected": true,
+      "render_inspected": true,
+      "review_status": "AI_REJECT",
+      "accepted_identity": null,
+      "production_use_approved": false,
+      "canvas_clipping": "NO_VISIBLE_CLIPPING",
+      "collision": "NONE_VISIBLE_IN_SUPPLIED_RENDER",
+      "no_alternative_character_label_assigned": true,
+      "expected_identity_result": "FAIL",
+      "confidence_in_rejection": 0.99,
+      "observed_shape": "A thick angular open arch/hook. The left leg descends and the upper stroke bends down at the right, but a large gap remains through the lower-right part of the intended ring.",
+      "identity_rationale": "The actual glyph does not enclose the central white area and is not a complete readable ideographic full stop. The missing closure is visible in the isolated raw-alpha display and in the composed render.",
+      "stroke_integrity": "FAIL_INCOMPLETE_INTENDED_RING",
+      "uncertainty": "The intended training/style mechanism is not diagnosed here. The visible shape failure is unambiguous.",
+      "recommendation": "Exclude this output from approved punctuation coverage and from quality-qualified composition. A new legitimate model output requires a new review; do not patch a ring onto this output to claim model success."
+    }
+  ],
+  "composed_render_findings": {
+    "visual_read": "An open angular hook at the left and a small diagonal solid mark farther right; both raw-glyph problems persist.",
+    "punctuation_identity_gate": "FAIL",
+    "clipping_or_collision": "No obvious canvas clipping or mutual collision. These defects are visible inside the canvas, so additional canvas padding does not resolve their identities.",
+    "placement": "The two marks appear at substantially different heights and sizes. With no Hanzi baseline reference or specified render text/order in this request, correct sentence-level punctuation placement cannot be certified.",
+    "author_style_fidelity": "NOT_ASSESSED_FROM_THIS_REQUEST",
+    "blank_lines_and_fullwidth_spaces": "NOT_EXERCISED"
+  },
+  "overall": {
+    "accepted_count": 0,
+    "rejected_count": 2,
+    "punctuation_coverage_qualified": false,
+    "production_qualified": false,
+    "summary": "Full stop fails due to an open/incomplete ring; comma is an ambiguous oblique solid mark and is conservatively rejected for current quality-qualified use. Neither provenance success nor the complete training budget cures these visible output failures."
+  },
+  "limitations": [
+    "Two fixed generated outputs only; no general accuracy estimate or broad model verdict is inferred.",
+    "No authoritative handwritten punctuation reference was included in this request, so exact author-specific punctuation style is not judged.",
+    "No same-character multi-seed comparison, surrounding Hanzi sentence, line-wrap punctuation, blank line, or fullwidth-space behavior is exercised.",
+    "The composed render lacks a specified sentence/order in the request; symbol identity mapping is established by the exact per-character glyphs and receipts.",
+    "Prior frozen layout and intake reports remain unchanged.",
+    "This report creates no human or owner approval and does not mutate product quality-gate state."
+  ]
+}

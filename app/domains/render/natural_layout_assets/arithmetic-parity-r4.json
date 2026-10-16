@@ -1,0 +1,1607 @@
+{
+  "schema": "layout-arithmetic-pixel-parity/1",
+  "source_implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+  "prior_API_receipt_sha256": "bdee0bcf21e81d0162b6805ae34e1b5d069ad5760faa005d072c99ad51cd203e",
+  "new_model_calls": 0,
+  "actual_API_acceptance": false,
+  "cases": [
+    {
+      "name": "short",
+      "previous_actual_png_sha256": "020abd7147cfc6b583a5faa8e6837c1cc3d2669de10ed6ae1f1bd1a338a87628",
+      "new_layout_png_sha256": "020abd7147cfc6b583a5faa8e6837c1cc3d2669de10ed6ae1f1bd1a338a87628",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 1,
+        "line_pitch": 240,
+        "native_canvas_scale": 1.0,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "晴梦星",
+        "normalized_text": "晴梦星",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 0,
+        "lines": [
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 0,
+            "line_slope": -0.035514464,
+            "residual_centering_mean_h": 5.782411586589357e-19,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              409,
+              154
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 131,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 0,
+            "trailing_inline_padding": 0,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          }
+        ],
+        "output_size": [
+          409,
+          154
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 0,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -17.0,
+            "ink_x": 0.0,
+            "scale": 0.9940677966101695,
+            "baseline_residual_h": -0.0060296005,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-06",
+            "source_sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              17,
+              6,
+              126,
+              137
+            ],
+            "x": -17,
+            "y": -13,
+            "canvas_position": [
+              0,
+              11
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 1,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": 123.653012784,
+            "ink_x": 139.653012784,
+            "scale": 1.0533898305084746,
+            "baseline_residual_h": 0.012391106,
+            "gap_before_observed_h": 0.28813559,
+            "gap_before_applied_h": 0.23399246399999998,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-07",
+            "source_sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              16,
+              8,
+              136,
+              146
+            ],
+            "x": 124,
+            "y": -24,
+            "canvas_position": [
+              141,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 2,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0.0,
+          "layout_transform": {
+            "x_float": 247.977212022,
+            "ink_x": 284.977212022,
+            "scale": 1.0,
+            "baseline_residual_h": -0.0063615055000000005,
+            "gap_before_observed_h": 0.22033898,
+            "gap_before_applied_h": 0.19331449799999997,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-08",
+            "source_sample_id": "ss_ai_60693d7579149ce5c96c66389fad13f6",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              37,
+              8,
+              113,
+              137
+            ],
+            "x": 248,
+            "y": -24,
+            "canvas_position": [
+              265,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "leading_trailing",
+      "previous_actual_png_sha256": "5c75d616dc2132b5f4cd74b2004f6fa3ff50bc9bbd0a8db12bdecceb4e80e0b0",
+      "new_layout_png_sha256": "5c75d616dc2132b5f4cd74b2004f6fa3ff50bc9bbd0a8db12bdecceb4e80e0b0",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 1,
+        "line_pitch": 240,
+        "native_canvas_scale": 1.0,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "　晴梦星　",
+        "normalized_text": "　晴梦星　",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 0,
+        "lines": [
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 0,
+            "line_slope": -0.035514464,
+            "residual_centering_mean_h": 5.782411586589357e-19,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              671,
+              154
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 131,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 131,
+            "trailing_inline_padding": 131,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          }
+        ],
+        "output_size": [
+          671,
+          154
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 1,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 1,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 1.0
+          },
+          "space_before_units": 1,
+          "space_before_h": 1.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -17.0,
+            "ink_x": 0.0,
+            "scale": 0.9940677966101695,
+            "baseline_residual_h": -0.0060296005,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 1,
+            "explicit_whitespace_advance_h": 1.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 1,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 1.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-06",
+            "source_sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              17,
+              6,
+              126,
+              137
+            ],
+            "x": -17,
+            "y": -13,
+            "canvas_position": [
+              131,
+              11
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 2,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": 123.653012784,
+            "ink_x": 139.653012784,
+            "scale": 1.0533898305084746,
+            "baseline_residual_h": 0.012391106,
+            "gap_before_observed_h": 0.28813559,
+            "gap_before_applied_h": 0.23399246399999998,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-07",
+            "source_sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              16,
+              8,
+              136,
+              146
+            ],
+            "x": 124,
+            "y": -24,
+            "canvas_position": [
+              272,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 3,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 1.0,
+          "layout_transform": {
+            "x_float": 247.977212022,
+            "ink_x": 284.977212022,
+            "scale": 1.0,
+            "baseline_residual_h": -0.0063615055000000005,
+            "gap_before_observed_h": 0.22033898,
+            "gap_before_applied_h": 0.19331449799999997,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-08",
+            "source_sample_id": "ss_ai_60693d7579149ce5c96c66389fad13f6",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              37,
+              8,
+              113,
+              137
+            ],
+            "x": 248,
+            "y": -24,
+            "canvas_position": [
+              396,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "ascii_space",
+      "previous_actual_png_sha256": "8a872ad4a87d37f09b83362a1de8c86a41560475384845fc0802cffaa9498373",
+      "new_layout_png_sha256": "8a872ad4a87d37f09b83362a1de8c86a41560475384845fc0802cffaa9498373",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 1,
+        "line_pitch": 240,
+        "native_canvas_scale": 1.0,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "晴 梦星",
+        "normalized_text": "晴 梦星",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 0,
+        "lines": [
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 0,
+            "line_slope": -0.035514464,
+            "residual_centering_mean_h": 5.782411586589357e-19,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              461,
+              156
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 131,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 0,
+            "trailing_inline_padding": 0,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          }
+        ],
+        "output_size": [
+          461,
+          156
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 0,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -17.0,
+            "ink_x": 0.0,
+            "scale": 0.9940677966101695,
+            "baseline_residual_h": -0.0060296005,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-06",
+            "source_sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              17,
+              6,
+              126,
+              137
+            ],
+            "x": -17,
+            "y": -13,
+            "canvas_position": [
+              0,
+              13
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 2,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 1,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.4
+          },
+          "space_before_units": 1,
+          "space_before_h": 0.4,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": 176.053012784,
+            "ink_x": 192.053012784,
+            "scale": 1.0533898305084746,
+            "baseline_residual_h": 0.012391106,
+            "gap_before_observed_h": 0.28813559,
+            "gap_before_applied_h": 0.23399246399999998,
+            "explicit_whitespace_units": 1,
+            "explicit_whitespace_advance_h": 0.4,
+            "explicit_whitespace": {
+              "ascii_spaces": 1,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.4
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-07",
+            "source_sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              16,
+              8,
+              136,
+              146
+            ],
+            "x": 176,
+            "y": -26,
+            "canvas_position": [
+              193,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 3,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0.0,
+          "layout_transform": {
+            "x_float": 300.377212022,
+            "ink_x": 337.377212022,
+            "scale": 1.0,
+            "baseline_residual_h": -0.0063615055000000005,
+            "gap_before_observed_h": 0.22033898,
+            "gap_before_applied_h": 0.19331449799999997,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-08",
+            "source_sample_id": "ss_ai_60693d7579149ce5c96c66389fad13f6",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              37,
+              8,
+              113,
+              137
+            ],
+            "x": 300,
+            "y": -26,
+            "canvas_position": [
+              317,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "fullwidth_space",
+      "previous_actual_png_sha256": "82c4d952cbdf22a4320fc1033e4617df2920a88b8798b09652c2b75bd663d038",
+      "new_layout_png_sha256": "82c4d952cbdf22a4320fc1033e4617df2920a88b8798b09652c2b75bd663d038",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 1,
+        "line_pitch": 240,
+        "native_canvas_scale": 1.0,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "晴　梦星",
+        "normalized_text": "晴　梦星",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 0,
+        "lines": [
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 0,
+            "line_slope": -0.035514464,
+            "residual_centering_mean_h": 5.782411586589357e-19,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              540,
+              159
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 131,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 0,
+            "trailing_inline_padding": 0,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          }
+        ],
+        "output_size": [
+          540,
+          159
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 0,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -17.0,
+            "ink_x": 0.0,
+            "scale": 0.9940677966101695,
+            "baseline_residual_h": -0.0060296005,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-06",
+            "source_sample_id": "ss_ai_e0bf6aea33bd0dd671d362b5a1500e6d",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              17,
+              6,
+              126,
+              137
+            ],
+            "x": -17,
+            "y": -13,
+            "canvas_position": [
+              0,
+              16
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 2,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 1,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 1.0
+          },
+          "space_before_units": 1,
+          "space_before_h": 1.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": 254.653012784,
+            "ink_x": 270.653012784,
+            "scale": 1.0533898305084746,
+            "baseline_residual_h": 0.012391106,
+            "gap_before_observed_h": 0.28813559,
+            "gap_before_applied_h": 0.23399246399999998,
+            "explicit_whitespace_units": 1,
+            "explicit_whitespace_advance_h": 1.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 1,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 1.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-07",
+            "source_sample_id": "ss_ai_4a3a2d875e41beb64445298ddbb08dca",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              16,
+              8,
+              136,
+              146
+            ],
+            "x": 255,
+            "y": -29,
+            "canvas_position": [
+              272,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 3,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0.0,
+          "layout_transform": {
+            "x_float": 378.977212022,
+            "ink_x": 415.977212022,
+            "scale": 1.0,
+            "baseline_residual_h": -0.0063615055000000005,
+            "gap_before_observed_h": 0.22033898,
+            "gap_before_applied_h": 0.19331449799999997,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-2:6-8",
+            "source_candidate_id": "NIKA-010-08",
+            "source_sample_id": "ss_ai_60693d7579149ce5c96c66389fad13f6",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              144,
+              144
+            ],
+            "transformed_ink_bbox": [
+              37,
+              8,
+              113,
+              137
+            ],
+            "x": 379,
+            "y": -29,
+            "canvas_position": [
+              396,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 0,
+            "line_top": 0,
+            "paragraph_native_scale": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "name": "blank_slots",
+      "previous_actual_png_sha256": "004312191ba5c9c8bc0c9c4f1c6dd239dd4be4b4e480b02fe67f8c8d4c25e708",
+      "new_layout_png_sha256": "004312191ba5c9c8bc0c9c4f1c6dd239dd4be4b4e480b02fe67f8c8d4c25e708",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 5,
+        "line_pitch": 48,
+        "native_canvas_scale": 0.24691356241703033,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "\n晴梦\n\n星晴\n",
+        "normalized_text": "\n晴梦\n\n星晴\n",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 1,
+        "lines": [
+          {
+            "line_index": 0,
+            "explicit_blank_line": true
+          },
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 1,
+            "line_slope": -0.007631868,
+            "residual_centering_mean_h": -0.0011948177500000004,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              63,
+              38
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 33,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 0,
+            "trailing_inline_padding": 0,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          },
+          {
+            "line_index": 2,
+            "explicit_blank_line": true
+          },
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 3,
+            "line_slope": -0.007631868,
+            "residual_centering_mean_h": 0.006540217249999999,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              61,
+              38
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 33,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 0,
+            "trailing_inline_padding": 0,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          },
+          {
+            "line_index": 4,
+            "explicit_blank_line": true
+          }
+        ],
+        "output_size": [
+          63,
+          240
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 1,
+          "explicit_line_breaks_before": 1,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -4.0,
+            "ink_x": 0.0,
+            "scale": 0.9794117647058823,
+            "baseline_residual_h": 0.017543905749999998,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-12-boundary-r3",
+            "source_sample_id": "ss_ai_8d9450c5e17e14a68f77556db6340b5a",
+            "phase": 1,
+            "segment_counter": 0,
+            "native_canvas": [
+              36,
+              36
+            ],
+            "transformed_ink_bbox": [
+              4,
+              2,
+              30,
+              34
+            ],
+            "x": -4,
+            "y": -1,
+            "canvas_position": [
+              -2,
+              3
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 1,
+            "line_top": 48,
+            "paragraph_native_scale": 0.24691356241703033
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 2,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0.0,
+          "layout_transform": {
+            "x_float": 25.957843185999998,
+            "ink_x": 29.957843185999998,
+            "scale": 0.9931372549019608,
+            "baseline_residual_h": -0.017543905749999998,
+            "gap_before_observed_h": 0.09803922,
+            "gap_before_applied_h": 0.119934642,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-13",
+            "source_sample_id": "ss_ai_bd3d722c2f381ffb76433819911fb6c6",
+            "phase": 1,
+            "segment_counter": 0,
+            "native_canvas": [
+              36,
+              36
+            ],
+            "transformed_ink_bbox": [
+              4,
+              2,
+              32,
+              35
+            ],
+            "x": 26,
+            "y": -4,
+            "canvas_position": [
+              28,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 1,
+            "line_top": 48,
+            "paragraph_native_scale": 0.24691356241703033
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 5,
+          "explicit_line_breaks_before": 2,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -10.0,
+            "ink_x": 0.0,
+            "scale": 1.0549019607843138,
+            "baseline_residual_h": -0.009808870749999999,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-11-boundary-r3",
+            "source_sample_id": "ss_ai_5ac488c8f6ac01ee63c18b7b6596ba13",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              36,
+              36
+            ],
+            "transformed_ink_bbox": [
+              10,
+              2,
+              30,
+              36
+            ],
+            "x": -10,
+            "y": -5,
+            "canvas_position": [
+              -2,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 3,
+            "line_top": 144,
+            "paragraph_native_scale": 0.24691356241703033
+          }
+        },
+        {
+          "char": "晴",
+          "text_index": 6,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0.0,
+          "layout_transform": {
+            "x_float": 18.404901862,
+            "ink_x": 22.404901862,
+            "scale": 0.9794117647058823,
+            "baseline_residual_h": 0.009808870749999999,
+            "gap_before_observed_h": 0.01960784,
+            "gap_before_applied_h": 0.072875814,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-12-boundary-r3",
+            "source_sample_id": "ss_ai_8d9450c5e17e14a68f77556db6340b5a",
+            "phase": 0,
+            "segment_counter": 0,
+            "native_canvas": [
+              36,
+              36
+            ],
+            "transformed_ink_bbox": [
+              4,
+              2,
+              30,
+              34
+            ],
+            "x": 18,
+            "y": -2,
+            "canvas_position": [
+              26,
+              3
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 3,
+            "line_top": 144,
+            "paragraph_native_scale": 0.24691356241703033
+          }
+        }
+      ]
+    },
+    {
+      "name": "PATCH-V2",
+      "previous_actual_png_sha256": "15d82a4224fe85ae6fcf8421dbd6a3b3337a1b5bd28dc4bbe732b348a01ca12d",
+      "new_layout_png_sha256": "15d82a4224fe85ae6fcf8421dbd6a3b3337a1b5bd28dc4bbe732b348a01ca12d",
+      "pixel_bytes_identical": true,
+      "layout": {
+        "schema": "natural-layout-paragraph/1",
+        "profile": "natural-layout-v1",
+        "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+        "seed": 20261002,
+        "line_count": 3,
+        "line_pitch": 80,
+        "native_canvas_scale": 0.41152259111404427,
+        "source_dimensions_preserved": true,
+        "explicit_line_breaks_preserved": true,
+        "explicit_blank_lines_preserved": true,
+        "original_text": "\r\n　晴梦星　\r\n",
+        "normalized_text": "\n　晴梦星　\n",
+        "line_break_normalization": "CRLF-and-CR-to-LF",
+        "whitespace_semantics": {
+          "ascii_space_h": 0.4,
+          "fullwidth_space_h": 1.0,
+          "tab_h": 1.6,
+          "source": "engineered-semantic-advances-not-author-measurement"
+        },
+        "trailing_line_breaks": 1,
+        "lines": [
+          {
+            "line_index": 0,
+            "explicit_blank_line": true
+          },
+          {
+            "schema": "natural-layout-execution/1",
+            "profile": "natural-layout-v1",
+            "profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+            "measurement_sha256": "12a7496d11e6ea19657bc03b5bff922398ec6cdfa39fec38e3aae7b3a00f46ae",
+            "trace_sha256": "b8bc8c721f24d40b707e2fcd010a5dfd262458d774b1dc215de4cfc23a979c26",
+            "implementation_sha256": "1ab07878f895ea69a88a9f5d1d20bda20584310b5cbaf8877ee269c279994202",
+            "seed": 20261002,
+            "style_id": 2,
+            "line_index": 1,
+            "line_slope": -0.007631868,
+            "residual_centering_mean_h": -0.012117299833333333,
+            "residual_centering_rescale": 1,
+            "global_fit": 1.0,
+            "output_size": [
+              263,
+              62
+            ],
+            "added_outline": false,
+            "independent_random_jitter": false,
+            "wrap_across_fragment_gaps": false,
+            "nominal_body_height": 54,
+            "nominal_body_origin": "median_normal_body_ink",
+            "layout_measurement_alpha_threshold": 128,
+            "threshold_changes_glyph_pixels": false,
+            "leading_inline_padding": 54,
+            "trailing_inline_padding": 54,
+            "whitespace_semantics": "ascii-0.4H-fullwidth-1.0H-tab-1.6H-v1"
+          },
+          {
+            "line_index": 2,
+            "explicit_blank_line": true
+          }
+        ],
+        "output_size": [
+          263,
+          240
+        ]
+      },
+      "records": [
+        {
+          "char": "晴",
+          "text_index": 2,
+          "explicit_line_breaks_before": 1,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 1,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 1.0
+          },
+          "space_before_units": 1,
+          "space_before_h": 1.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": -7.0,
+            "ink_x": 0.0,
+            "scale": 0.9794117647058823,
+            "baseline_residual_h": 0.02846638783333333,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": null,
+            "explicit_whitespace_units": 1,
+            "explicit_whitespace_advance_h": 1.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 1,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 1.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-12-boundary-r3",
+            "source_sample_id": "ss_ai_8d9450c5e17e14a68f77556db6340b5a",
+            "phase": 1,
+            "segment_counter": 0,
+            "native_canvas": [
+              59,
+              59
+            ],
+            "transformed_ink_bbox": [
+              7,
+              3,
+              51,
+              56
+            ],
+            "x": -7,
+            "y": -2,
+            "canvas_position": [
+              54,
+              4
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 1,
+            "line_top": 80,
+            "paragraph_native_scale": 0.41152259111404427
+          }
+        },
+        {
+          "char": "梦",
+          "text_index": 3,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 0,
+          "layout_transform": {
+            "x_float": 44.476470668,
+            "ink_x": 50.476470668,
+            "scale": 0.9931372549019608,
+            "baseline_residual_h": -0.006621423666666666,
+            "gap_before_observed_h": 0.09803922,
+            "gap_before_applied_h": 0.119934642,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": false,
+            "source_segment_id": "NIKA-010:line-3:11-13",
+            "source_candidate_id": "NIKA-010-13",
+            "source_sample_id": "ss_ai_bd3d722c2f381ffb76433819911fb6c6",
+            "phase": 1,
+            "segment_counter": 0,
+            "native_canvas": [
+              59,
+              59
+            ],
+            "transformed_ink_bbox": [
+              6,
+              3,
+              53,
+              57
+            ],
+            "x": 44,
+            "y": -6,
+            "canvas_position": [
+              105,
+              0
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 1,
+            "line_top": 80,
+            "paragraph_native_scale": 0.41152259111404427
+          }
+        },
+        {
+          "char": "星",
+          "text_index": 4,
+          "explicit_line_breaks_before": 0,
+          "inline_whitespace": {
+            "ascii_spaces": 0,
+            "fullwidth_spaces": 0,
+            "tabs": 0,
+            "other_spaces": 0,
+            "advance_h": 0.0
+          },
+          "space_before_units": 0,
+          "space_before_h": 0.0,
+          "space_after_h": 1.0,
+          "layout_transform": {
+            "x_float": 90.57647066799998,
+            "ink_x": 105.57647066799998,
+            "scale": 0.9735849056603774,
+            "baseline_residual_h": -0.021844964166666668,
+            "gap_before_observed_h": null,
+            "gap_before_applied_h": 0.15,
+            "explicit_whitespace_units": 0,
+            "explicit_whitespace_advance_h": 0.0,
+            "explicit_whitespace": {
+              "ascii_spaces": 0,
+              "fullwidth_spaces": 0,
+              "tabs": 0,
+              "other_spaces": 0,
+              "advance_h": 0.0
+            },
+            "segment_boundary_gap_unobserved": true,
+            "source_segment_id": "NIKA-001:line-1:4-5",
+            "source_candidate_id": "NIKA-001-04",
+            "source_sample_id": "ss_ai_4d3bb8ae9cb92600d31bbe7ff6818dec",
+            "phase": 0,
+            "segment_counter": 1,
+            "native_canvas": [
+              59,
+              59
+            ],
+            "transformed_ink_bbox": [
+              15,
+              3,
+              45,
+              54
+            ],
+            "x": 91,
+            "y": -5,
+            "canvas_position": [
+              152,
+              1
+            ],
+            "global_fit": 1.0,
+            "rotation_degrees": 0,
+            "shear": 0,
+            "width_factor": 1,
+            "line_index": 1,
+            "line_top": 80,
+            "paragraph_native_scale": 0.41152259111404427
+          }
+        }
+      ]
+    }
+  ]
+}

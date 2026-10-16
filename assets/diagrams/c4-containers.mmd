@@ -1,0 +1,20 @@
+C4Container
+  title ToSign Studio - 运行单元与数据
+  Person(creator, "签图制作者", "操作、审核与导出")
+  System_Boundary(studio, "ToSign Studio") {
+    Container(web, "网页工作台", "Vue 3 / TypeScript", "浏览器交互与任务状态")
+    Container(api, "业务与生成后端", "FastAPI / Python", "域模块、线程与合成")
+    ContainerDb(db, "业务数据库", "SQLite / SQLAlchemy", "任务、审核与索引")
+    ContainerDb(files, "文件存储", "本地文件系统", "素材、字形、模型、PNG与ZIP")
+    Container(ml, "模型执行进程", "PyTorch / CPU或CUDA", "受控可选子进程")
+  }
+  Rel(creator, web, "操作页面", "浏览器")
+  Rel(web, api, "提交与查询", "JSON / HTTP")
+  Rel(api, db, "持久化任务与审核", "SQL")
+  Rel(api, files, "读写素材及成品", "文件 I/O")
+  Rel(api, ml, "资格有效时执行", "子进程 / JSON与文件")
+  UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+  UpdateRelStyle(web, api, $offsetY="-32", $offsetX="0")
+  UpdateRelStyle(api, db, $offsetY="-24", $offsetX="-34")
+  UpdateRelStyle(api, files, $offsetY="-16", $offsetX="60")
+  UpdateRelStyle(api, ml, $offsetY="40", $offsetX="-60")

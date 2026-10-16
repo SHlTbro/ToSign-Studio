@@ -1,0 +1,6 @@
+C4Context
+  title ToSign Studio - 用户与系统边界
+  Person(creator, "签图制作者", "导入素材，核对成品")
+  System(studio, "ToSign Studio", "署名祝福图排版、批量生成、质检与导出")
+  Rel(creator, studio, "制作与审核签图", "浏览器 / HTTP")
+  UpdateRelStyle(creator, studio, $offsetY="-25", $offsetX="0")

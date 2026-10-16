@@ -1,0 +1,379 @@
+{
+  "schema": "independent-targeted-blinded-layout-ai-visual-review/1",
+  "review_actor": "AI",
+  "human_review_performed": false,
+  "owner_confirmed": false,
+  "reviewer": {
+    "provider": "OpenAI",
+    "model_id": "gpt-6-astra",
+    "reviewer_kind": "vision_model"
+  },
+  "reviewer_task_id": "/root/review_fresh_candidate_glyphs",
+  "evidence_id": "targeted-layout-v4-public-only-20261002",
+  "inspection_started_at_utc": "2026-10-02T15:22:16+00:00",
+  "reviewed_at_utc": "2026-10-02T15:25:42+00:00",
+  "request_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/REVIEW-REQUEST.json",
+  "request_sha256": "0d096415c80a10e0f487772c5a8ec0453ba13c173379773399d14cf475843966",
+  "blinding": {
+    "condition_assignment_read": false,
+    "implementation_read": false,
+    "identified_comparison_files_read": false,
+    "review_frozen_before_unblinding": true,
+    "prior_familiarity_disclosure": "Reviewer previously inspected the author input/candidate data and the earlier v3 blinded layout panels. Reviewer has now seen these three cached glyph shapes and references again. This is condition-masked review, not an input-naive or no-history review; current X/Y assignments were not read or inferred as an asserted identity."
+  },
+  "scope": "Only the public request and the five named panels, three alpha inputs and two reference originals were read as task evidence. Derived display views and public-pixel measurements support the review. No model generation, application/API/browser verification, source change, or punctuation acceptance occurred.",
+  "method": [
+    "Verified all ten named image hashes and the request hash.",
+    "Actually opened all five complete X/Y panels, all three native RGBA alpha inputs, and both reference originals with image tools.",
+    "Because black alpha ink was obscured on the raw image-tool backdrop, also inspected each alpha composited onto white and enlarged 6x with nearest-neighbor, without modifying source assets.",
+    "Reopened separate content crops of both blank-line and overflow conditions at readable resolution.",
+    "Measured public raster occupied-ink bands using RGB<100, excluding the gray guide and headers. These are visual diagnostic measurements, not hidden engine semantics.",
+    "Compared ASCII/fullwidth cases and native input shapes before making per-case judgments."
+  ],
+  "evidence_assets": [
+    {
+      "kind": "panel",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/ascii_space.png",
+      "sha256": "82f15989598aeed888b47a4d06802d89c76fa34359ddbe86207fb41e0b224c2f",
+      "size": [
+        960,
+        800
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "panel",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/fullwidth_space.png",
+      "sha256": "caec9b729b14553d4a5e2afc7df356ccbb04e7baa37efdb3a80d2891094f6017",
+      "size": [
+        960,
+        800
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "panel",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/leading_trailing_inline.png",
+      "sha256": "50a3d12199eed4d4375d808b98ae07e13f6d7f99de0b4d80d52e6863cfcfee35",
+      "size": [
+        960,
+        800
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "panel",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/blank_line_slots.png",
+      "sha256": "c75951ea930e2fd4576a8cd58354486346fe1afaa314ad39bf16bfeceac03962",
+      "size": [
+        820,
+        1620
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "panel",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/fullwidth_overflow.png",
+      "sha256": "85cdd2f3e9c20319586e627e5030e1f725d59160dd01c1e74067d20f5f32b09b",
+      "size": [
+        460,
+        840
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "cached_alpha",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/alpha-inputs/U+68A6.png",
+      "sha256": "3ae98929a98314a79f14aa477dc5b4561f9da8594ea5b6e9f2550f4207f48d26",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "cached_alpha",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/alpha-inputs/U+661F.png",
+      "sha256": "4729d6679010f34065d8003e1eb0529bd920368dbfd3570f627f8c0e17e46fc2",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "cached_alpha",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/alpha-inputs/U+6674.png",
+      "sha256": "90597cbf1a89d1b5155d3a77512971641264624ba49ddaa16950fa0b0fc9fdd2",
+      "size": [
+        96,
+        96
+      ],
+      "mode": "RGBA",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "author_reference",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/NIKA-001.png",
+      "sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "size": [
+        748,
+        1135
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    },
+    {
+      "kind": "author_reference",
+      "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/NIKA-010.png",
+      "sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "size": [
+        546,
+        980
+      ],
+      "mode": "RGB",
+      "actually_opened_with_image_tool": true
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "ascii_space",
+      "expected_text": "晴 梦星",
+      "expected_unicode_sequence": [
+        "U+6674",
+        "U+0020",
+        "U+68A6",
+        "U+661F"
+      ],
+      "panel_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/ascii_space.png",
+      "panel_sha256": "82f15989598aeed888b47a4d06802d89c76fa34359ddbe86207fb41e0b224c2f",
+      "preference": "TIE",
+      "preference_strength": "EXACT_CONTENT_TIE",
+      "decision_confidence": 1.0,
+      "X_and_Y_actually_viewed": true,
+      "visible_glyphs_complete_relative_to_inputs": true,
+      "visible_clipping": "NONE_OBSERVED",
+      "visible_collision": "NONE_OBSERVED",
+      "glyph_formation_or_model_learning_claimed": false,
+      "X": {
+        "targeted_verdict": "PASS_VISIBLE_ASCII_SEPARATION",
+        "finding": "The space after 晴 is clearly wider than the unspaced 梦/星 pair; all three glyphs remain readable."
+      },
+      "Y": {
+        "targeted_verdict": "PASS_VISIBLE_ASCII_SEPARATION",
+        "finding": "The same visible layout and glyph pixels as X."
+      },
+      "pixel_evidence": "After excluding the 40px condition header, X pixels at y=40:400 and Y pixels at y=440:800 are exactly identical. At RGB<100 the occupied x bands are [77,185], [269,388], [414,489] in each tile: 83 blank ink columns after 晴 versus 25 between 梦 and 星.",
+      "uncertainty": "Ink-to-ink gaps establish visible spacing, not a hidden logical advance specification. This exact tie gives no basis to prefer one condition for naturalness."
+    },
+    {
+      "case_id": "fullwidth_space",
+      "expected_text": "晴　梦星",
+      "expected_unicode_sequence": [
+        "U+6674",
+        "U+3000",
+        "U+68A6",
+        "U+661F"
+      ],
+      "panel_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/fullwidth_space.png",
+      "panel_sha256": "caec9b729b14553d4a5e2afc7df356ccbb04e7baa37efdb3a80d2891094f6017",
+      "preference": "Y",
+      "preference_strength": "STRONG",
+      "decision_confidence": 0.99,
+      "X_and_Y_actually_viewed": true,
+      "visible_glyphs_complete_relative_to_inputs": true,
+      "visible_clipping": "NONE_OBSERVED",
+      "visible_collision": "NONE_OBSERVED",
+      "glyph_formation_or_model_learning_claimed": false,
+      "X": {
+        "targeted_verdict": "FAIL_FULLWIDTH_DISTINCTION",
+        "finding": "The fullwidth-space case uses the same visible occupied x bands as its ASCII-space counterpart. The requested wider distinction is absent."
+      },
+      "Y": {
+        "targeted_verdict": "PASS_VISIBLE_FULLWIDTH_DISTINCTION",
+        "finding": "The requested gap after 晴 is substantially wider while 梦 and 星 remain a coherent pair. All three remain intact and readable."
+      },
+      "pixel_evidence": "晴 remains at [77,185]. 梦 starts at x=348 in Y versus x=269 in X/ASCII, a 79px shift. The corresponding visible blank ink gap is 162px in Y versus 83px in X; the unspaced 梦/星 gap remains 25px.",
+      "uncertainty": "These public raster measurements support a wider fullwidth space, but do not reveal the precise em-based logical advance or prove all whitespace handling."
+    },
+    {
+      "case_id": "leading_trailing_inline",
+      "expected_text": "　晴 梦　",
+      "expected_unicode_sequence": [
+        "U+3000",
+        "U+6674",
+        "U+0020",
+        "U+68A6",
+        "U+3000"
+      ],
+      "panel_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/leading_trailing_inline.png",
+      "panel_sha256": "50a3d12199eed4d4375d808b98ae07e13f6d7f99de0b4d80d52e6863cfcfee35",
+      "preference": "X",
+      "preference_strength": "STRONG_FOR_VISIBLE_LEADING_SLOT",
+      "decision_confidence": 0.98,
+      "X_and_Y_actually_viewed": true,
+      "visible_glyphs_complete_relative_to_inputs": true,
+      "visible_clipping": "NONE_OBSERVED",
+      "visible_collision": "NONE_OBSERVED",
+      "glyph_formation_or_model_learning_claimed": false,
+      "X": {
+        "targeted_verdict": "PASS_LEADING_AND_INTERNAL_PARTIAL_TRAILING_UNVERIFIED",
+        "finding": "The leading fullwidth slot produces a clear indentation before 晴. The internal ASCII-space gap remains visible between 晴 and 梦."
+      },
+      "Y": {
+        "targeted_verdict": "FAIL_LEADING_FULLWIDTH_SLOT",
+        "finding": "晴 begins at the same x position as the no-leading-space cases; the requested leading indent is absent. Internal separation remains visible."
+      },
+      "pixel_evidence": "X 晴 begins at x=209, 132px to the right of the x=77 start in Y and the no-leading-space reference cases. The internal ink gaps are 84px in X and 83px in Y.",
+      "uncertainty": "The final U+3000 has no visible ink. Both conditions use an identical fixed gray region guide, so the right-side blank canvas cannot independently prove or disprove trailing-space logical advance. Neither condition receives an exact trailing-inline-space pass from this image alone.",
+      "additional_evidence_needed": "A public layout receipt or QA-only end-of-line advance marker, plus a no-trailing-space control, is needed to verify the terminal fullwidth advance. No new glyph generation is needed."
+    },
+    {
+      "case_id": "blank_line_slots",
+      "expected_text": "\n晴梦\n\n星晴\n",
+      "expected_unicode_sequence": [
+        "U+000A",
+        "U+6674",
+        "U+68A6",
+        "U+000A",
+        "U+000A",
+        "U+661F",
+        "U+6674",
+        "U+000A"
+      ],
+      "panel_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/blank_line_slots.png",
+      "panel_sha256": "c75951ea930e2fd4576a8cd58354486346fe1afaa314ad39bf16bfeceac03962",
+      "preference": "X",
+      "preference_strength": "STRONG",
+      "decision_confidence": 0.98,
+      "X_and_Y_actually_viewed": true,
+      "visible_glyphs_complete_relative_to_inputs": true,
+      "visible_clipping": "NONE_OBSERVED",
+      "visible_collision": "NONE_OBSERVED",
+      "glyph_formation_or_model_learning_claimed": false,
+      "expected_logical_lines": [
+        "",
+        "晴梦",
+        "",
+        "星晴",
+        ""
+      ],
+      "X": {
+        "targeted_verdict": "PASS_VISIBLE_FIVE_SLOT_PATTERN_WITH_LIMIT",
+        "finding": "The first content row begins after a substantial empty upper slot; an empty row separates 晴梦 and 星晴; substantial lower space remains after the second row. Smaller coherent glyphs fit the requested leading/internal/trailing blank-slot pattern."
+      },
+      "Y": {
+        "targeted_verdict": "FAIL_LEADING_SLOT_AND_INCONSISTENT_END_SLOTS",
+        "finding": "The first content row starts immediately below the region top, so the explicit leading empty line is lost. A large internal separation remains; it would be inaccurate to say all newlines or the internal blank row disappear. The enlarged rows and narrow lower remainder are inconsistent with the same five-slot structure."
+      },
+      "pixel_evidence": "X content starts 135px below the guide top, with occupied rows at relative y=[135,224] and [396,487], leaving 162px below the last visible ink before the bottom guide. Y starts only 9px below the guide top, with relative rows [9,165] and [441,596], leaving 53px below. X row-start separation is 261px; Y is 432px.",
+      "uncertainty": "Blank lines have no ink and the frame is a region guide, not individual baseline/line-box markers. X is strongly consistent with five allocated logical lines, but exact baseline positions and trailing-line-box allocation still need logical layout bounds if required as a strict invariant."
+    },
+    {
+      "case_id": "fullwidth_overflow",
+      "expected_text": "晴　梦 星晴　梦星 晴梦星",
+      "expected_unicode_sequence": [
+        "U+6674",
+        "U+3000",
+        "U+68A6",
+        "U+0020",
+        "U+661F",
+        "U+6674",
+        "U+3000",
+        "U+68A6",
+        "U+661F",
+        "U+0020",
+        "U+6674",
+        "U+68A6",
+        "U+661F"
+      ],
+      "panel_path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v4/public/fullwidth_overflow.png",
+      "panel_sha256": "85cdd2f3e9c20319586e627e5030e1f725d59160dd01c1e74067d20f5f32b09b",
+      "preference": "X",
+      "preference_strength": "STRONG",
+      "decision_confidence": 0.98,
+      "X_and_Y_actually_viewed": true,
+      "visible_glyphs_complete_relative_to_inputs": true,
+      "visible_clipping": "NONE_OBSERVED",
+      "visible_collision": "NONE_OBSERVED",
+      "glyph_formation_or_model_learning_claimed": false,
+      "expected_visible_glyph_count": 9,
+      "observed_glyph_rows": [
+        [
+          "晴",
+          "梦",
+          "星",
+          "晴"
+        ],
+        [
+          "梦",
+          "星",
+          "晴",
+          "梦"
+        ],
+        [
+          "星"
+        ]
+      ],
+      "X": {
+        "targeted_verdict": "PASS_VISIBLE_WHITESPACE_AND_READABLE_WRAP",
+        "finding": "All nine glyphs remain readable over three rows. The first fullwidth gap is wider than the internal ASCII gap, and the second fullwidth slot is visible as an indent before 梦 on the next line. No stroke is visibly clipped or collides."
+      },
+      "Y": {
+        "targeted_verdict": "FAIL_FULLWIDTH_SEMANTICS_BUT_READABLE",
+        "finding": "All nine glyphs remain readable with the same 4/4/1 wrap, but the fullwidth gap collapses to about the ASCII-gap width and the wrap-leading fullwidth indentation is absent."
+      },
+      "pixel_evidence": "X row 1 has 73 blank ink columns between 晴 and 梦 and 35 between 梦 and 星; Y has 37 and 35 respectively. X row 2 begins at x=125 versus x=67 in Y, a 58px visible indent. Both have a final 星 on row 3.",
+      "uncertainty": "The one-glyph final row is visually a little stranded, but it does not sacrifice correctness or readability. This test supports the shown narrow region only, not arbitrary canvas widths, every wrapping rule, or semantic grouping beyond the supplied literal whitespace."
+    }
+  ],
+  "shared_visual_findings": {
+    "glyph_integrity": "The recognizable 晴, 梦 and 星 outlines, their major components and stroke endpoints persist across the shown layouts. No obvious new stroke loss, unrelated ink fragment, clipping or collision is seen relative to the supplied cached alpha shapes. This is a visual comparison, not a claim of exact resampling invariance.",
+    "readability": "All expected visible glyphs are present and readable in each case. Rejected cases fail requested whitespace semantics rather than missing glyph counts.",
+    "human_handwriting_naturalness": "Bounded changes in glyph size, baseline and shape-specific gaps remain coherent. No random damage is needed to obtain these differences. Literal large gaps and blank slots can look sparse, but preserving the user text takes priority over filling the canvas. ASCII is exactly tied; other preferences here are primarily text-fidelity decisions.",
+    "author_reference_comparison": "The two author originals show angular variable strokes, nonuniform size/gaps and hand-set lines. The panels retain a broadly compatible handwritten rather than mechanically typeset feel. These originals do not provide the same 晴/梦/星 characters, so they cannot prove exact same-character author fidelity. Repeated cached shapes do not establish learned within-character variation.",
+    "gray_guide": "The thin rectangle is treated only as the identical QA region boundary, not as product ink or proof of invisible terminal advance.",
+    "punctuation": "NOT_EXERCISED_OR_APPROVED"
+  },
+  "overall": {
+    "preferences": {
+      "ascii_space": "TIE",
+      "fullwidth_space": "Y",
+      "leading_trailing_inline": "X",
+      "blank_line_slots": "X",
+      "fullwidth_overflow": "X"
+    },
+    "rejected_case_conditions": [
+      "fullwidth_space:X",
+      "leading_trailing_inline:Y",
+      "blank_line_slots:Y",
+      "fullwidth_overflow:Y"
+    ],
+    "bounded_visual_result": "The preferred visible outcomes restore relative fullwidth spacing, a leading inline indent, a leading blank-line slot, and wrap indentation while retaining readability.",
+    "exact_trailing_inline_advance": "UNVERIFIED",
+    "exact_trailing_blank_line_allocation": "VISUALLY_CONSISTENT_FOR_X_BUT_LOGICAL_BOUNDS_UNVERIFIED",
+    "new_model_generations": 0,
+    "normal_API_acceptance": false,
+    "production_qualified": false,
+    "prior_frozen_reports_superseded": false
+  },
+  "limitations": [
+    "Fixed public panels do not expose logical text-advance endpoints or line boxes; terminal whitespace cannot receive an unconditional exact semantic pass.",
+    "No condition identity or implementation claim is made before unblinding.",
+    "No normal API/browser route, canvas matrix, punctuation, unseen character generation, seed variability, or production readiness is verified.",
+    "The three raw alpha inputs are reused cached outputs. This comparison is layout-only and cannot demonstrate new stroke/model learning.",
+    "Prior v3 blind findings and the separate punctuation rejection remain frozen and unchanged."
+  ],
+  "recommended_next_evidence": [
+    "After preserving this freeze, independently inspect logical leading/trailing advances and line bounds or public QA-only endpoint markers against the exact strings.",
+    "Exercise the preferred layout through the normal product route before claiming API/browser acceptance.",
+    "Keep the rejected punctuation outputs excluded; this whitespace result does not affect their quality decisions."
+  ]
+}

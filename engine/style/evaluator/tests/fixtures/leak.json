@@ -1,0 +1,16 @@
+{
+ "style_ref": "/workspace/scratch/64fc1a466651/dyyy_implementation_20261001/engine/style/evaluator/tests/fixtures/ref_丙.png",
+ "style_ref_label": "甲",
+ "items": [
+  {
+   "label": "甲",
+   "target_png": "/workspace/scratch/64fc1a466651/dyyy_implementation_20261001/engine/style/evaluator/tests/fixtures/target_甲.png",
+   "sample_id": "fix:甲"
+  },
+  {
+   "label": "乙",
+   "target_png": "/workspace/scratch/64fc1a466651/dyyy_implementation_20261001/engine/style/evaluator/tests/fixtures/target_乙.png",
+   "sample_id": "fix:乙"
+  }
+ ]
+}

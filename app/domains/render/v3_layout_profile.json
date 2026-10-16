@@ -1,0 +1,292 @@
+{
+  "schema": "accepted-v3-layout-profile/1",
+  "source_sidecar_sha256": "6a172e0f0f2e9ba18360dff85fff0c179bd035d6c27e796e7b9f696e03e35cd7",
+  "model_adapter_sha256": "017881442b7f8b909f7d8d8c4c5e7ad1893d0caa3c3267ae3c793a9a96175f81",
+  "font_ids": {
+    "latin": "preset-caveat-600",
+    "other": "preset-noto-cjk-sc-face2"
+  },
+  "reference_roi": [
+    35,
+    1450,
+    1135,
+    1995
+  ],
+  "ordinary_scale": 1.3,
+  "to_ratio": 2,
+  "header_gap": 10,
+  "layout_seed": 2026100401,
+  "ink_rgb": [
+    140,
+    48,
+    68
+  ],
+  "supersampling": 5,
+  "per_segment": [
+    {
+      "text": "To",
+      "line_index": 0,
+      "photo_canvas_xy": [
+        10,
+        1499
+      ],
+      "photo_support_bbox": [
+        70,
+        1515,
+        255,
+        1715
+      ],
+      "photo_core_bbox_alpha128": [
+        73,
+        1518,
+        252,
+        1712
+      ],
+      "size_px": 291.2,
+      "font_size_px": 291.2,
+      "angle_ccw": -3.8,
+      "reference_font_mask": {
+        "sha256": "2038cd57797b0b7f4970ae359d10672462fdff6547b6b6e1b5571ff285280f6d",
+        "alpha_sha256": "f99adc1826b1e5432c75c59322e7858903d021ac7d3c323b5eed6dfcaf44d212",
+        "font_sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+        "face_index": 0,
+        "variation_axes": {
+          "wght": 600
+        },
+        "package_member": "payload/v2/evidence/rendered-alpha/segment-00.png"
+      }
+    },
+    {
+      "text": "：",
+      "line_index": 0,
+      "photo_canvas_xy": [
+        242,
+        1631
+      ],
+      "photo_support_bbox": [
+        265,
+        1638,
+        287,
+        1708
+      ],
+      "photo_core_bbox_alpha128": [
+        268,
+        1641,
+        284,
+        1705
+      ],
+      "size_px": 101.4,
+      "font_size_px": 101.4,
+      "angle_ccw": 0.8,
+      "reference_font_mask": {
+        "sha256": "093280d3aeb1eef3286495c4e8e0048cae255f230f1f00a03ad7b67067ec7c3b",
+        "alpha_sha256": "a9e31f99fa476d0169d58063d5f1baa80d85fa564228fb64b8e255021df01058",
+        "font_sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+        "face_index": 2,
+        "variation_axes": {},
+        "package_member": "payload/v2/evidence/rendered-alpha/segment-01.png"
+      }
+    },
+    {
+      "text": "shitT",
+      "line_index": 0,
+      "photo_canvas_xy": [
+        273,
+        1594
+      ],
+      "photo_support_bbox": [
+        297,
+        1605,
+        590,
+        1721
+      ],
+      "photo_core_bbox_alpha128": [
+        300,
+        1607,
+        587,
+        1718
+      ],
+      "size_px": 153.4,
+      "font_size_px": 153.4,
+      "angle_ccw": 2.1,
+      "reference_font_mask": {
+        "sha256": "15fb9a930a6ac217bbce42f627306ad4aab9d6fb161513a7f9f3788fe6fba5f7",
+        "alpha_sha256": "2eb4b984ca8e4fdbae605102e2a817740ac203fd248f90716c4ed8263c17d6a1",
+        "font_sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+        "face_index": 0,
+        "variation_axes": {
+          "wght": 600
+        },
+        "package_member": "payload/v2/evidence/rendered-alpha/segment-02.png"
+      }
+    },
+    {
+      "text": "拉",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        82,
+        1809
+      ],
+      "photo_support_bbox": [
+        100,
+        1843,
+        232,
+        1951
+      ],
+      "photo_core_bbox_alpha128": [
+        103,
+        1847,
+        231,
+        1950
+      ],
+      "native_size": 107,
+      "angle_ccw": -5.489423395801416,
+      "v1_canvas_xy": [
+        161,
+        1810
+      ],
+      "model_seed": 1353132044
+    },
+    {
+      "text": "shit",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        230,
+        1820
+      ],
+      "photo_support_bbox": [
+        251,
+        1831,
+        458,
+        1947
+      ],
+      "photo_core_bbox_alpha128": [
+        254,
+        1834,
+        456,
+        1944
+      ],
+      "size_px": 145.6,
+      "font_size_px": 145.6,
+      "angle_ccw": -3.4,
+      "reference_font_mask": {
+        "sha256": "0a5f7f2b8bb7aa49b42287ad6c05f265c0ca6ae611607cee62a2eea672a2f212",
+        "alpha_sha256": "50e4049e3f9d25049991770bb9f4e1b12581247d11d5248827b39f965cd99518",
+        "font_sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988",
+        "face_index": 0,
+        "variation_axes": {
+          "wght": 600
+        },
+        "package_member": "payload/v2/evidence/rendered-alpha/segment-04.png"
+      }
+    },
+    {
+      "text": "永",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        467,
+        1791
+      ],
+      "photo_support_bbox": [
+        496,
+        1817,
+        605,
+        1934
+      ],
+      "photo_core_bbox_alpha128": [
+        498,
+        1821,
+        603,
+        1931
+      ],
+      "native_size": 102,
+      "angle_ccw": 4.785019588491366,
+      "v1_canvas_xy": [
+        457,
+        1796
+      ],
+      "model_seed": 569856558
+    },
+    {
+      "text": "远",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        589,
+        1825
+      ],
+      "photo_support_bbox": [
+        608,
+        1847,
+        727,
+        1955
+      ],
+      "photo_core_bbox_alpha128": [
+        612,
+        1851,
+        726,
+        1951
+      ],
+      "native_size": 99,
+      "angle_ccw": 1.7499606943134616,
+      "v1_canvas_xy": [
+        551,
+        1822
+      ],
+      "model_seed": 1647571062
+    },
+    {
+      "text": "通",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        719,
+        1762
+      ],
+      "photo_support_bbox": [
+        737,
+        1781,
+        896,
+        1940
+      ],
+      "photo_core_bbox_alpha128": [
+        743,
+        1786,
+        888,
+        1936
+      ],
+      "native_size": 126,
+      "angle_ccw": -4.4539831495536735,
+      "v1_canvas_xy": [
+        651,
+        1774
+      ],
+      "model_seed": 2026940690
+    },
+    {
+      "text": "畅",
+      "line_index": 1,
+      "photo_canvas_xy": [
+        890,
+        1783
+      ],
+      "photo_support_bbox": [
+        911,
+        1801,
+        1058,
+        1947
+      ],
+      "photo_core_bbox_alpha128": [
+        914,
+        1815,
+        1048,
+        1944
+      ],
+      "native_size": 115,
+      "angle_ccw": 5.5378272874353165,
+      "v1_canvas_xy": [
+        783,
+        1790
+      ],
+      "model_seed": 3512450038
+    }
+  ]
+}

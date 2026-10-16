@@ -1,0 +1,123 @@
+{
+  "schema": "author-ink-catalog/1",
+  "entries": [
+    {
+      "id": "train-magenta-v1",
+      "enabled": true,
+      "status": "CONTROLLED_CPU_QA_ONLY_PENDING_ACTUAL_PHOTO_REVIEW",
+      "mode": "source-solid-srgb-v1",
+      "layout_profile": "natural-layout-v1",
+      "render_source_policy": "m2_required",
+      "owner_user_id": 1,
+      "profile_id": 2,
+      "artifact_id": 1,
+      "artifact_manifest_sha256": "e5de8ee711b77930e1980daaad70d34da6353e35b158123d2ebabe5a070360e0",
+      "adapter_sha256": "aa974b3356352d83bc6bf8f0051b22d80f5766ac867b6df67a252c30ee262fe8",
+      "snapshot_sha256": "428dd33ebd88addea3efd738b6c1eaca40aac48eaa7f9d3317fcd5ac71d7acd3",
+      "runtime_binding_sha256": "edce85e2de5bfa0c1761260663733b63a3c230902d1b59b51d5fb14655a9d9d7",
+      "natural_profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+      "profile": {
+        "schema": "source-solid-ink-profile/1",
+        "id": "train-magenta-v1",
+        "mode": "source-solid-srgb-v1",
+        "rgb": [
+          196,
+          26,
+          180
+        ],
+        "hex": "#C41AB4",
+        "source_id": "NIKA-001",
+        "source_image_sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+        "measurement_sha256": "2511cf55b5fa8bf3cbbc2a38636352c677bb1c030965567e3242b25ec0ae2bc0",
+        "role": "train_supported_candidate",
+        "split": "train",
+        "alpha_policy": "preserve-post-layout-alpha-bytes",
+        "transfer_policy": "encoded-srgb",
+        "opacity_multiplier": 1,
+        "compositor_version": "pillow-rgb-straight-rgba-source-over/1",
+        "composite_policy": "Pillow-RGB-paste-straight-RGBA-coverage-once"
+      },
+      "profile_sha256": "048bf9431d4b7a9096e851666672c48723b5eac6ab6aa31803b56c069d8a750d",
+      "files": {
+        "palette_candidates.json": "2511cf55b5fa8bf3cbbc2a38636352c677bb1c030965567e3242b25ec0ae2bc0",
+        "R6-COLOR-INTEGRATION-CONTRACT.md": "99c832fd5ba366438156a38c75c15d31bf499e563ba5d97ca0648075ac8e6001"
+      },
+      "code_sha256": {
+        "ink_color_v1.py": "867d73fbc53e0585ed0923e30b5495b51f7dfe70e6ba8db014e7eee1ed72c03d",
+        "ink_authorization.py": "3930f8c7204e908bcf9382292a3f54154ae7ade3301cb61697a1efbfec175bb8"
+      },
+      "qualification": {
+        "scope": "Exact owned train-parent apparent palette on current qualified natural-layout-v1/m2_required only",
+        "distribution_enabled": false,
+        "actual_bound_API": "PENDING",
+        "actual_photo_visual_review": "PENDING",
+        "default_auto_contrast_unchanged": true,
+        "validation_source_color_available": false,
+        "physical_ink_recovery_claim": false,
+        "model_stroke_learning_claim": false,
+        "readability_threshold_calibrated": false,
+        "source_profile_auto_promotion": false,
+        "QA_execution_scope": "Isolated cloned cloud QA database; exact owner1/profile2/artifact1; actual photo review still required; monochrome default unchanged"
+      }
+    },
+    {
+      "id": "train-violet-v1",
+      "enabled": true,
+      "status": "CONTROLLED_CPU_QA_ONLY_PENDING_ACTUAL_PHOTO_REVIEW",
+      "mode": "source-solid-srgb-v1",
+      "layout_profile": "natural-layout-v1",
+      "render_source_policy": "m2_required",
+      "owner_user_id": 1,
+      "profile_id": 2,
+      "artifact_id": 1,
+      "artifact_manifest_sha256": "e5de8ee711b77930e1980daaad70d34da6353e35b158123d2ebabe5a070360e0",
+      "adapter_sha256": "aa974b3356352d83bc6bf8f0051b22d80f5766ac867b6df67a252c30ee262fe8",
+      "snapshot_sha256": "428dd33ebd88addea3efd738b6c1eaca40aac48eaa7f9d3317fcd5ac71d7acd3",
+      "runtime_binding_sha256": "edce85e2de5bfa0c1761260663733b63a3c230902d1b59b51d5fb14655a9d9d7",
+      "natural_profile_sha256": "7b67adc3ea93b6ccaa31f4227f14970a99e0f85289071ded138144ac977d3dc1",
+      "profile": {
+        "schema": "source-solid-ink-profile/1",
+        "id": "train-violet-v1",
+        "mode": "source-solid-srgb-v1",
+        "rgb": [
+          47,
+          12,
+          221
+        ],
+        "hex": "#2F0CDD",
+        "source_id": "NIKA-010",
+        "source_image_sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+        "measurement_sha256": "2511cf55b5fa8bf3cbbc2a38636352c677bb1c030965567e3242b25ec0ae2bc0",
+        "role": "train_supported_candidate",
+        "split": "train",
+        "alpha_policy": "preserve-post-layout-alpha-bytes",
+        "transfer_policy": "encoded-srgb",
+        "opacity_multiplier": 1,
+        "compositor_version": "pillow-rgb-straight-rgba-source-over/1",
+        "composite_policy": "Pillow-RGB-paste-straight-RGBA-coverage-once"
+      },
+      "profile_sha256": "41453b967efc8aa32be94c0ae00cf95476b682fed8d14c47cb7b4c4747f1159e",
+      "files": {
+        "palette_candidates.json": "2511cf55b5fa8bf3cbbc2a38636352c677bb1c030965567e3242b25ec0ae2bc0",
+        "R6-COLOR-INTEGRATION-CONTRACT.md": "99c832fd5ba366438156a38c75c15d31bf499e563ba5d97ca0648075ac8e6001"
+      },
+      "code_sha256": {
+        "ink_color_v1.py": "867d73fbc53e0585ed0923e30b5495b51f7dfe70e6ba8db014e7eee1ed72c03d",
+        "ink_authorization.py": "3930f8c7204e908bcf9382292a3f54154ae7ade3301cb61697a1efbfec175bb8"
+      },
+      "qualification": {
+        "scope": "Exact owned train-parent apparent palette on current qualified natural-layout-v1/m2_required only",
+        "distribution_enabled": false,
+        "actual_bound_API": "PENDING",
+        "actual_photo_visual_review": "PENDING",
+        "default_auto_contrast_unchanged": true,
+        "validation_source_color_available": false,
+        "physical_ink_recovery_claim": false,
+        "model_stroke_learning_claim": false,
+        "readability_threshold_calibrated": false,
+        "source_profile_auto_promotion": false,
+        "QA_execution_scope": "Isolated cloned cloud QA database; exact owner1/profile2/artifact1; actual photo review still required; monochrome default unchanged"
+      }
+    }
+  ]
+}

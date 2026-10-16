@@ -1,0 +1,309 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "从名单到成品 · 正常生成与失败恢复",
+    "locale": "zh-CN",
+    "output": "export/assets/diagrams/workflow.html",
+    "quality_profile": "showcase",
+    "legend": {
+      "entries": {
+        "frontend": {
+          "label": "页面操作"
+        },
+        "backend": {
+          "label": "生成与记录"
+        },
+        "security": {
+          "label": "校验与审核"
+        },
+        "messagebus": {
+          "label": "任务处理"
+        },
+        "database": {
+          "label": "文件输出"
+        }
+      }
+    }
+  },
+  "lanes": [
+    {
+      "id": "normal",
+      "label": "正常生成"
+    },
+    {
+      "id": "exceptions",
+      "label": "停止与保留",
+      "variant": "exception"
+    },
+    {
+      "id": "recovery",
+      "label": "受控恢复"
+    }
+  ],
+  "mainPath": [
+    "input",
+    "freeze",
+    "queue",
+    "render",
+    "review",
+    "export"
+  ],
+  "nodes": [
+    {
+      "id": "input",
+      "lane": "normal",
+      "col": 0,
+      "type": "frontend",
+      "label": "选择底图与模板",
+      "sublabel": "填写名单、祝福语",
+      "width": 150
+    },
+    {
+      "id": "freeze",
+      "lane": "normal",
+      "col": 1,
+      "type": "security",
+      "label": "核验并冻结参数",
+      "sublabel": "幂等键绑定任务",
+      "width": 150
+    },
+    {
+      "id": "queue",
+      "lane": "normal",
+      "col": 2,
+      "type": "messagebus",
+      "label": "排队逐项处理",
+      "sublabel": "持久化状态",
+      "width": 150
+    },
+    {
+      "id": "render",
+      "lane": "normal",
+      "col": 3,
+      "type": "backend",
+      "label": "生成真实图片",
+      "sublabel": "字形、排版与墨色",
+      "width": 150
+    },
+    {
+      "id": "review",
+      "lane": "normal",
+      "col": 4,
+      "type": "security",
+      "label": "逐张质检",
+      "sublabel": "通过才可导出",
+      "width": 150
+    },
+    {
+      "id": "export",
+      "lane": "normal",
+      "col": 5,
+      "type": "database",
+      "label": "导出 PNG / ZIP",
+      "sublabel": "核对当前图片版本",
+      "width": 150
+    },
+    {
+      "id": "stop",
+      "lane": "exceptions",
+      "col": 1,
+      "type": "security",
+      "label": "停止当前提交",
+      "sublabel": "资格或参数不可用",
+      "width": 150
+    },
+    {
+      "id": "failure",
+      "lane": "exceptions",
+      "col": 3,
+      "type": "backend",
+      "label": "记录失败或取消",
+      "sublabel": "保留任务与原图",
+      "width": 150
+    },
+    {
+      "id": "reject",
+      "lane": "exceptions",
+      "col": 4,
+      "type": "security",
+      "label": "不合格图片保留",
+      "sublabel": "禁止作为已审成品",
+      "width": 150
+    },
+    {
+      "id": "recover",
+      "lane": "recovery",
+      "col": 2,
+      "type": "frontend",
+      "label": "回读后定向恢复",
+      "sublabel": "未知提交先查原任务",
+      "width": 150
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "from": "input",
+      "to": "freeze",
+      "label": "提交",
+      "role": "main",
+      "variant": "default"
+    },
+    {
+      "id": "e1",
+      "from": "freeze",
+      "to": "queue",
+      "label": "核验通过",
+      "role": "main",
+      "variant": "default"
+    },
+    {
+      "id": "e2",
+      "from": "freeze",
+      "to": "stop",
+      "label": "核验失败",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e3",
+      "from": "queue",
+      "to": "render",
+      "label": "轮到本项",
+      "role": "main",
+      "variant": "default"
+    },
+    {
+      "id": "e4",
+      "from": "render",
+      "to": "review",
+      "label": "生成成功",
+      "role": "main",
+      "variant": "default"
+    },
+    {
+      "id": "e5",
+      "from": "render",
+      "to": "failure",
+      "label": "失败 / 取消",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e6",
+      "from": "review",
+      "to": "export",
+      "label": "审核通过",
+      "role": "main",
+      "variant": "default"
+    },
+    {
+      "id": "e7",
+      "from": "review",
+      "to": "reject",
+      "label": "审核拒绝",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e8",
+      "from": "failure",
+      "to": "recover",
+      "label": "用户恢复失败项",
+      "role": "branch",
+      "variant": "default"
+    },
+    {
+      "id": "e9",
+      "from": "recover",
+      "to": "queue",
+      "label": "受控重试 / 关联新任务",
+      "role": "return",
+      "variant": "default"
+    },
+    {
+      "id": "e10",
+      "from": "stop",
+      "to": "input",
+      "label": "修正条件后再提交",
+      "role": "return",
+      "variant": "default",
+      "route": "return-left",
+      "fromSide": "left",
+      "toSide": "left"
+    }
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "input"
+    ],
+    "allowedTerminals": [
+      "export",
+      "reject"
+    ],
+    "requiredEdges": [
+      {
+        "from": "input",
+        "to": "freeze"
+      },
+      {
+        "from": "freeze",
+        "to": "queue"
+      },
+      {
+        "from": "freeze",
+        "to": "stop"
+      },
+      {
+        "from": "queue",
+        "to": "render"
+      },
+      {
+        "from": "render",
+        "to": "review"
+      },
+      {
+        "from": "render",
+        "to": "failure"
+      },
+      {
+        "from": "review",
+        "to": "export"
+      },
+      {
+        "from": "review",
+        "to": "reject"
+      },
+      {
+        "from": "failure",
+        "to": "recover"
+      },
+      {
+        "from": "recover",
+        "to": "queue"
+      },
+      {
+        "from": "stop",
+        "to": "input"
+      }
+    ]
+  },
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "字形来源须明确",
+      "items": [
+        "模型不可用时停止；只有明确允许回退的策略，才会记录实际回退来源。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "保留证据，避免重复",
+      "items": [
+        "等待超时不等于未提交；先回读任务，再恢复失败项。",
+        "修改成品会撤销旧审核；导出重新核对当前版本与图片字节。"
+      ]
+    }
+  ]
+}

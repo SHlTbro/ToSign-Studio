@@ -1,0 +1,277 @@
+{
+  "schema": "independent-blinded-layout-visual-review/1",
+  "reviewer": {
+    "provider": "OpenAI",
+    "model_id": "gpt-6-astra",
+    "reviewer_kind": "vision_model"
+  },
+  "reviewer_task_id": "/root/review_fresh_candidate_glyphs",
+  "reviewed_at_utc": "2026-10-02T14:34:11+00:00",
+  "frozen_before_condition_unblinding": true,
+  "condition_identity_known": false,
+  "private_condition_map_read": false,
+  "implementation_or_identified_condition_casefiles_read": false,
+  "independence_disclosure": "I previously reviewed these author input images and their glyph candidates in this conversation, so I have prior familiarity with the source handwriting. I have not inspected the layout implementation, condition assignment or private condition map. This is independent/blinded to X/Y implementation identity, not a no-history or input-naive review.",
+  "request": {
+    "path": "/workspace/scratch/64fc1a466651/dyyy_handwriting_product_iteration_20261002/layout-evidence/experiment-v3/public/REVIEW-REQUEST.json",
+    "sha256": "a7e7e3de8eb6f05476f833c3e28b76d23a22e3d5c5ad7b50b790da727476330e"
+  },
+  "read_scope": "Only the public request and its five panels/two author references were read as task evidence. Display-only enlarged crops were derived from those public panels for inspection. No source or public asset was modified.",
+  "references": [
+    {
+      "filename": "NIKA-001.png",
+      "sha256": "dc689dc1f0304f9b023bfbd14e28cc1a5c3067943cb4062e2539852d92289e40",
+      "actual_image_viewed": true
+    },
+    {
+      "filename": "NIKA-010.png",
+      "sha256": "a66bf2014aa6b785eed0f4d5c5037a33175b43d87b274819caa136c1c9cf03ca",
+      "actual_image_viewed": true
+    }
+  ],
+  "common_limits": {
+    "punctuation": "NOT_EXERCISED: none of the five supplied expected strings contains punctuation. Synthetic-unit-test claims are not visual punctuation evidence.",
+    "blank_lines": "NOT_EXERCISED: the multiline string has line breaks but no empty line. Empty-line preservation cannot be signed off.",
+    "stroke_correctness_limit": "Expected glyph identities are visually recognizable, but these panels do not provide the original cached alpha assets for pixel-level invariance checks. The supplied author references do not contain 晴/梦/星, so correct new-glyph formation or exact same-character author fidelity is not established."
+  },
+  "cases": [
+    {
+      "id": "short",
+      "expected_text": "晴梦星",
+      "public_panel": "short.png",
+      "public_panel_sha256": "56a881681ee8c95cf14d7d8d8de7aac082a45d79174ac18fd5da87c3eb834f4c",
+      "actual_panel_visually_inspected": true,
+      "preference": "Y",
+      "preference_strength": "MODERATE",
+      "candidate_X": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 3,
+        "visible_text": "晴梦星",
+        "layout_disposition": "USABLE_BUT_LESS_NATURAL",
+        "naturalness": "The three glyphs read as evenly staged isolated units, with fairly uniform apparent height and a more regular bottom line.",
+        "gap_size_baseline": "The gap before 星 is conspicuously open; size and vertical placement feel more mechanically regular than the author references.",
+        "readability": "All three identities are readable.",
+        "stroke_integrity": "No visibly missing whole component; a gray/white edge rim is visible around the black strokes. This is a rendering confound, not proof of a layout-induced stroke change.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "One line is appropriate for three characters."
+      },
+      "candidate_Y": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 3,
+        "visible_text": "晴梦星",
+        "layout_disposition": "PREFERRED_BOUNDED_LAYOUT_EXPERIMENT",
+        "naturalness": "Less rigid size and vertical placement make the short inscription feel more casually handwritten.",
+        "gap_size_baseline": "The modest size differences and slightly rising/uneven baseline remain coherent; the group reads as one phrase rather than three equal slots.",
+        "readability": "All three identities are readable.",
+        "stroke_integrity": "The same main components remain visible, without obvious random breakage. Edges look cleaner and darker than X.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "One line is appropriate."
+      },
+      "remaining_issues": [
+        "Y is preferred, but the visible edge-rendering difference also affects appearance; this cannot isolate layout as the sole cause."
+      ],
+      "uncertainty": "Only three cached glyphs are shown. This is insufficient to establish broad author-style fidelity or newly learned stroke quality.",
+      "condition_assignment_known": false
+    },
+    {
+      "id": "repeated_long",
+      "expected_text": "晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星晴梦星",
+      "public_panel": "repeated_long.png",
+      "public_panel_sha256": "2fdee696380b48a3ea5250e5586765a5adf8300f9c9e9ce7e69c523c976ec512",
+      "actual_panel_visually_inspected": true,
+      "preference": "Y",
+      "preference_strength": "STRONG",
+      "candidate_X": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 36,
+        "visible_text_structure": "12 consecutive 晴梦星 triplets on one compressed line",
+        "layout_disposition": "REJECT_FOR_THIS_LONG_TEXT_LAYOUT",
+        "naturalness": "The tiny repeated strip resembles a shrunken stamp sequence rather than handwriting on the available page.",
+        "gap_size_baseline": "Uniform tiny scale and a nearly fixed baseline are mechanically repetitive.",
+        "readability": "At native panel size the characters are very small; enlargement reveals degraded small strokes. A large canvas area is left unused.",
+        "stroke_integrity": "All triplet positions appear present, but aggressive reduction loses useful visual stroke detail. This does not prove that the cached glyph sources themselves changed.",
+        "clipping": "No panel-edge clipping is visible.",
+        "collisions": "No obvious overlap; fitting by excessive shrinkage is the failure.",
+        "wrapping": "No useful wrap despite 36 glyphs and ample vertical area."
+      },
+      "candidate_Y": {
+        "observed_lines": 3,
+        "observed_hanzi_count": 36,
+        "visible_text_structure": "Three lines of 12 glyphs, four 晴梦星 triplets per line",
+        "layout_disposition": "PREFERRED_BOUNDED_LAYOUT_EXPERIMENT",
+        "naturalness": "The larger multiline block has readable handwriting rhythm. Small size/baseline/gap variation looks controlled rather than damaged.",
+        "gap_size_baseline": "Rows remain distinct; uneven bottoms and spacing do not destroy line coherence.",
+        "readability": "All 36 positions are readily readable at native size.",
+        "stroke_integrity": "No obvious lost component or stroke collision appears. Identical cached glyph shapes still repeat, so this is not real penstroke variability.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE within or between lines",
+        "wrapping": "Three readable lines use the canvas sensibly and retain the sequence."
+      },
+      "remaining_issues": [
+        "Repeated identical outlines remain perceptible even in Y. Placement variation alone does not make 36 genuinely independent handwritten glyphs."
+      ],
+      "uncertainty": "Preference is strong for usable layout/readability; no inference about new character coverage, motor variation, or model learning is warranted.",
+      "condition_assignment_known": false
+    },
+    {
+      "id": "explicit_wrap",
+      "expected_text": "晴梦星晴梦星\n晴梦星晴梦星\n晴梦星",
+      "public_panel": "explicit_wrap.png",
+      "public_panel_sha256": "e575761fdc495939e0a5e9bc40413841140af5a2eb1b074071b62c60cb6ddb6d",
+      "actual_panel_visually_inspected": true,
+      "preference": "Y",
+      "preference_strength": "STRONG",
+      "candidate_X": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 15,
+        "visible_text_structure": "All five triplets are flattened into one line",
+        "layout_disposition": "REJECT_NEWLINE_FIDELITY_FAILURE",
+        "naturalness": "Evenly spaced small units read as a single mechanically composed row.",
+        "gap_size_baseline": "A nearly fixed baseline and reduced scale flatten the intended three-line structure.",
+        "readability": "Glyphs remain recognizable, but formatting intent is lost.",
+        "stroke_integrity": "No obvious missing glyph; no direct stroke-integrity advantage follows from the flattened row.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "FAIL: the expected explicit 6/6/3 line grouping is not preserved."
+      },
+      "candidate_Y": {
+        "observed_lines": 3,
+        "observed_hanzi_count": 15,
+        "visible_text_structure": "6 glyphs, 6 glyphs, then 3 glyphs",
+        "layout_disposition": "PREFERRED_BOUNDED_LAYOUT_EXPERIMENT",
+        "naturalness": "The line groups read as intentional handwritten lines, with moderate nonuniformity.",
+        "gap_size_baseline": "Sizes and bottoms vary modestly while left margins and interline spacing remain coherent.",
+        "readability": "All identities are readable in the requested order.",
+        "stroke_integrity": "No visible random damage, collision or missing component.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "PASS_FOR_SHOWN_CASE: both explicit line breaks are visibly retained as 6/6/3."
+      },
+      "remaining_issues": [
+        "This tests ordinary explicit line breaks only; it does not test preservation of an empty line."
+      ],
+      "uncertainty": "High-confidence formatting preference. Blank-line and punctuation behavior remain untested.",
+      "condition_assignment_known": false
+    },
+    {
+      "id": "sparse_evaluation_reuse",
+      "expected_text": "一晴天梦星一天晴梦星",
+      "public_panel": "sparse_evaluation_reuse.png",
+      "public_panel_sha256": "ef94979c02546aa0a331b9ad14c91b76ec21b21b681c8316b6a9ef3f8d9bfb2a",
+      "actual_panel_visually_inspected": true,
+      "preference": "X",
+      "preference_strength": "SLIGHT",
+      "candidate_X": {
+        "observed_lines": 2,
+        "observed_hanzi_count": 10,
+        "visible_text_structure": "First line 一晴天梦星一天晴; second line 梦星",
+        "layout_disposition": "PREFERRED_WITH_WRAP_TRADEOFF",
+        "naturalness": "Larger writing and modestly uneven body heights/gaps feel closer to the reference inscriptions.",
+        "gap_size_baseline": "Sparse 一 remains a short horizontal at a plausible mid-body height rather than being stretched vertically; tall glyphs keep their proportions.",
+        "readability": "Both 一 occurrences and both 天 occurrences remain easy to distinguish; the final 梦星 line is readable.",
+        "stroke_integrity": "No visible clipping, missing component, or sparse-glyph distortion.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "Order is retained with an automatic 8/2 break. The two-character final line is a stylistic tradeoff, not a hard failure."
+      },
+      "candidate_Y": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 10,
+        "visible_text_structure": "一晴天梦星一天晴梦星 on one line",
+        "layout_disposition": "USABLE_ALTERNATIVE_NOT_REJECTED",
+        "naturalness": "More compact and regularly aligned; less casually handwritten than X but still readable.",
+        "gap_size_baseline": "More uniform apparent body height and gaps; sparse 一 remains appropriately short in height.",
+        "readability": "All ten positions are readable.",
+        "stroke_integrity": "No obvious sparse-glyph breakage or stretching.",
+        "clipping": "NONE_VISIBLE",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "The whole sequence fits as a smaller one-line alternative. No explicit newline was requested, so this is not a formatting failure."
+      },
+      "remaining_issues": [
+        "X is a slight naturalness preference only. Y may be preferable when a compact single line is the actual product requirement.",
+        "The extra final line in X should not be described as universally better layout."
+      ],
+      "uncertainty": "No fresh model coverage is established: 一/天 reuse supplied evaluation PNGs, and the other glyphs are cached repetitions.",
+      "condition_assignment_known": false
+    },
+    {
+      "id": "spaces_and_overflow",
+      "expected_text": "晴 梦星　晴梦星 晴梦星晴梦星",
+      "public_panel": "spaces_and_overflow.png",
+      "public_panel_sha256": "e21b7a9324a0c369dede6059285c41a0aef6b2ab66bb8eb4be5254d0587e2389",
+      "actual_panel_visually_inspected": true,
+      "preference": "X",
+      "preference_strength": "STRONG",
+      "candidate_X": {
+        "observed_lines": 2,
+        "observed_hanzi_count": 12,
+        "visible_text_structure": "First line visually groups 晴 / 梦星 / 晴梦星; second line 晴梦星晴梦星",
+        "layout_disposition": "PREFERRED_WITH_WHITESPACE_SEMANTICS_UNRESOLVED",
+        "naturalness": "Readable larger glyphs with uneven but coherent placement and clear line separation.",
+        "gap_size_baseline": "Visible extra gaps separate the early spaced groups; ordinary neighboring characters remain closer.",
+        "readability": "All twelve glyphs are visible in order at native size.",
+        "stroke_integrity": "No visible lost component or random damage.",
+        "clipping": "NONE_VISIBLE at right edge or line boundaries",
+        "collisions": "NONE_VISIBLE",
+        "wrapping": "Overflow is handled by a readable second line.",
+        "whitespace": "PARTIAL_VISUAL_SUPPORT: explicit group gaps are visible. The ASCII-space and U+3000-space gap widths look similar, so distinct fullwidth-space advance semantics are not established."
+      },
+      "candidate_Y": {
+        "observed_lines": 1,
+        "observed_hanzi_count": 12,
+        "visible_text_structure": "A small nearly uniform sequence of four 晴梦星 triplets",
+        "layout_disposition": "REJECT_SPACING_AND_OVERFLOW_PRESENTATION",
+        "naturalness": "The small stamped strip lacks the intended grouped handwriting rhythm.",
+        "gap_size_baseline": "The specified larger gaps are not convincingly distinguished from normal inter-glyph spacing.",
+        "readability": "Characters can be recognized when enlarged, but the fit-by-shrinking presentation is much less usable at native size.",
+        "stroke_integrity": "All twelve positions appear present; reduction degrades detail without demonstrating source-glyph damage.",
+        "clipping": "No obvious edge clipping",
+        "collisions": "No collision, but this does not compensate for collapsed spacing and over-reduction",
+        "wrapping": "No readable overflow wrap; everything is squeezed into one line.",
+        "whitespace": "FAIL_FOR_VISIBLE_INTENT: the first explicit gap and fullwidth gap are not visibly preserved as distinct groups."
+      },
+      "remaining_issues": [
+        "X does not establish exact ASCII-space versus ideographic-space metrics. If fullwidth-space distinction is a product requirement, verify it explicitly before qualification."
+      ],
+      "uncertainty": "Strong comparative preference for X; complete whitespace semantics, punctuation and empty-line handling are still unproven.",
+      "condition_assignment_known": false
+    }
+  ],
+  "overall": {
+    "per_case_preference": {
+      "short": "Y",
+      "repeated_long": "Y",
+      "explicit_wrap": "Y",
+      "sparse_evaluation_reuse": "X (slight)",
+      "spaces_and_overflow": "X"
+    },
+    "hard_case_rejections": [
+      {
+        "case": "repeated_long",
+        "condition": "X",
+        "reason": "Excessive shrink-to-one-line sacrifices practical readability and handwriting rhythm."
+      },
+      {
+        "case": "explicit_wrap",
+        "condition": "X",
+        "reason": "Explicit line breaks are lost."
+      },
+      {
+        "case": "spaces_and_overflow",
+        "condition": "Y",
+        "reason": "Visible requested spacing intent is flattened and overflow is addressed by over-reduction."
+      }
+    ],
+    "bounded_verdict": "There is a consistent visible advantage for the conditions that retain readable scale, coherent nonuniform placement and actual wrapping. Preferred conditions show no obvious layout-induced stroke clipping or collisions in these panels. This is a promising layout-only result with specific rejected cases, not a production qualification.",
+    "author_reference_comparison": "The preferred arrangements are directionally closer to the references in having uneven glyph sizes, changing baseline and irregular inter-glyph gaps without losing line organization. They still reuse identical cached outlines and do not prove the author's within-glyph handwriting behavior.",
+    "production_qualified": false,
+    "new_model_or_stroke_learning_improvement_claimed": false,
+    "new_model_generation_count_reported_by_request": 0,
+    "new_character_coverage_claimed": false,
+    "punctuation_visual_validation": "NOT_EXERCISED",
+    "blank_line_visual_validation": "NOT_EXERCISED",
+    "remaining_gate": "Preserve this blinded result before revealing assignments. Check exact space/fullwidth-space behavior, real punctuation and empty lines, additional distinct glyphs/paragraphs, and actual product API/browser behavior separately. No release follows from these image preferences alone."
+  }
+}
