@@ -53,7 +53,10 @@ def terminate_owned(process, record_path, nonce):
                 try:
                     if _created(api, w, handle) != record['created']:
                         raise ValueError('Process identity changed; refusing child termination')
-                    if api.WaitForSingleObject(handle, 0) == 258:
+                    status = api.WaitForSingleObject(handle, 0)
+                    if status not in (0, 258):
+                        raise RuntimeError(f'Cannot observe owned process exit: wait status {status}')
+                    if status == 258:
                         if not api.TerminateProcess(handle, 1):
                             error = ctypes.get_last_error()
                             # Windows can report ACCESS_DENIED while a process

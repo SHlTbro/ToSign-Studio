@@ -58,3 +58,23 @@ def test_health_timeout_removes_owned_listener(tmp_path):
         demo.run(tmp_path / 'timeout-demo', port, dist, startup_timeout=.01)
     with socket.socket() as probe:
         assert probe.connect_ex(('127.0.0.1', port)) != 0
+
+
+@pytest.mark.skipif(os.name != 'nt', reason='Windows process observation regression')
+def test_failed_wait_does_not_claim_child_exit(tmp_path, monkeypatch):
+    import types
+    record = tmp_path / 'process.json'
+    record.write_text(json.dumps({'nonce': 'test-nonce', 'pid': 123, 'created': 456}))
+    events = []
+    api = types.SimpleNamespace(
+        OpenProcess=lambda *args: 1,
+        WaitForSingleObject=lambda *args: -1,
+        TerminateProcess=lambda *args: events.append('terminate'),
+        CloseHandle=lambda *args: events.append('closed'),
+    )
+    monkeypatch.setattr(owned, '_windows_api', lambda: (api, None))
+    monkeypatch.setattr(owned, '_created', lambda *args: 456)
+    child = types.SimpleNamespace(poll=lambda: 0, wait=lambda **kwargs: 0)
+    with pytest.raises(RuntimeError, match='wait status -1'):
+        owned.terminate_owned(child, record, 'test-nonce')
+    assert events == ['closed']

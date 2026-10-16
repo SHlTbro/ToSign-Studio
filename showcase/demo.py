@@ -88,7 +88,10 @@ def run(output, port, dist=None, *, startup_timeout=20):
             client.post('/_showcase/stop', headers={'X-YY-Showcase-Stop': stop_token}, timeout=2)
             process.wait(timeout=2)
         except (httpx.HTTPError, subprocess.TimeoutExpired):
-            terminate_owned(process, process_record, instance)
+            pass
+        # Even a successful HTTP response + exited redirector must be checked
+        # against the recorded real child's process handle.
+        terminate_owned(process, process_record, instance)
         raise RuntimeError('Server did not become healthy')
     def stop(process):
         # Graceful local shutdown also closes a Windows venv redirector's child.
