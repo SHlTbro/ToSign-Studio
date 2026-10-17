@@ -1,0 +1,330 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "从 To 签原图到审核交付",
+    "locale": "zh-CN",
+    "output": "artifacts/showcase-20261017-r2/export/assets/diagrams/training-workflow.html",
+    "quality_profile": "showcase"
+  },
+  "lanes": [
+    {
+      "id": "normal",
+      "label": "从原图到可用模型与交付"
+    },
+    {
+      "id": "exceptions",
+      "label": "停止条件与定向回修",
+      "variant": "exception"
+    }
+  ],
+  "mainPath": [
+    "source_review",
+    "extract_glyphs",
+    "character_s03",
+    "gpu2_model",
+    "deployment_eval",
+    "ai_owner_review",
+    "publish_select",
+    "batch_export"
+  ],
+  "semanticChecks": {
+    "allowedRoots": [
+      "source_review"
+    ],
+    "allowedTerminals": [
+      "batch_export",
+      "runtime_hold",
+      "quality_hold",
+      "item_hold"
+    ],
+    "requiredEdges": [
+      {
+        "from": "source_review",
+        "to": "extract_glyphs"
+      },
+      {
+        "from": "extract_glyphs",
+        "to": "character_s03"
+      },
+      {
+        "from": "character_s03",
+        "to": "gpu2_model"
+      },
+      {
+        "from": "gpu2_model",
+        "to": "deployment_eval"
+      },
+      {
+        "from": "deployment_eval",
+        "to": "ai_owner_review"
+      },
+      {
+        "from": "publish_select",
+        "to": "batch_export"
+      },
+      {
+        "from": "deployment_eval",
+        "to": "quality_hold"
+      }
+    ],
+    "requiredPaths": [
+      {
+        "from": "source_review",
+        "to": "batch_export"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "source_review",
+      "lane": "normal",
+      "col": 0,
+      "type": "database",
+      "label": "To签来源审批",
+      "sublabel": "核准后提取",
+      "width": 140
+    },
+    {
+      "id": "extract_glyphs",
+      "lane": "normal",
+      "col": 1,
+      "type": "frontend",
+      "label": "提取与修整",
+      "sublabel": "检测后可手动补框",
+      "width": 148
+    },
+    {
+      "id": "character_s03",
+      "lane": "normal",
+      "col": 2,
+      "type": "security",
+      "label": "字样审核 / S03",
+      "sublabel": "本人确认与 AI 授权分开",
+      "width": 158
+    },
+    {
+      "id": "gpu2_model",
+      "lane": "normal",
+      "col": 3,
+      "type": "backend",
+      "label": "GPU2 原模型",
+      "sublabel": "8 epoch / 192步；原权重保留",
+      "width": 150
+    },
+    {
+      "id": "deployment_eval",
+      "lane": "normal",
+      "col": 4,
+      "type": "backend",
+      "label": "部署资格 / 效果评估",
+      "sublabel": "已见、未见、混排真实图",
+      "width": 158
+    },
+    {
+      "id": "ai_owner_review",
+      "lane": "normal",
+      "col": 5,
+      "type": "security",
+      "label": "AI复核 / Owner确认",
+      "sublabel": "两项分开记录；本人真实接受",
+      "width": 164,
+      "yOffset": -92
+    },
+    {
+      "id": "publish_select",
+      "lane": "normal",
+      "col": 5,
+      "type": "frontend",
+      "label": "正式发布与回读",
+      "sublabel": "通过后页面才可选择",
+      "width": 158,
+      "yOffset": 24
+    },
+    {
+      "id": "batch_export",
+      "lane": "normal",
+      "col": 5,
+      "type": "frontend",
+      "label": "批量审核导出",
+      "sublabel": "逐张审核后 PNG / ZIP",
+      "width": 156,
+      "yOffset": 140
+    },
+    {
+      "id": "source_hold",
+      "lane": "exceptions",
+      "col": 0,
+      "type": "security",
+      "label": "来源不合格",
+      "sublabel": "补齐来源后再核验",
+      "width": 148
+    },
+    {
+      "id": "material_hold",
+      "lane": "exceptions",
+      "col": 2,
+      "type": "security",
+      "label": "材料不合格",
+      "sublabel": "停止训练，回修候选",
+      "width": 158
+    },
+    {
+      "id": "runtime_hold",
+      "lane": "exceptions",
+      "col": 3,
+      "type": "security",
+      "label": "执行失败",
+      "sublabel": "读取原任务后定向恢复",
+      "width": 150
+    },
+    {
+      "id": "quality_hold",
+      "lane": "exceptions",
+      "col": 4,
+      "type": "security",
+      "label": "质量未通过",
+      "sublabel": "停止发布；修正后复核",
+      "width": 158
+    },
+    {
+      "id": "item_hold",
+      "lane": "exceptions",
+      "col": 5,
+      "type": "security",
+      "label": "单张失败",
+      "sublabel": "只处理原批次失败项",
+      "width": 156,
+      "yOffset": 140
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "from": "source_review",
+      "to": "extract_glyphs",
+      "label": "通过后提取",
+      "role": "main"
+    },
+    {
+      "id": "e02",
+      "from": "extract_glyphs",
+      "to": "character_s03",
+      "label": "保存候选",
+      "role": "main"
+    },
+    {
+      "id": "e03",
+      "from": "character_s03",
+      "to": "gpu2_model",
+      "label": "S03 READY",
+      "role": "main"
+    },
+    {
+      "id": "e04",
+      "from": "gpu2_model",
+      "to": "deployment_eval",
+      "label": "训练完成",
+      "role": "main"
+    },
+    {
+      "id": "e05",
+      "from": "deployment_eval",
+      "to": "ai_owner_review",
+      "label": "评估通过",
+      "role": "main"
+    },
+    {
+      "id": "e06",
+      "from": "ai_owner_review",
+      "to": "publish_select",
+      "label": "双门通过",
+      "role": "main"
+    },
+    {
+      "id": "e07",
+      "from": "publish_select",
+      "to": "batch_export",
+      "label": "选择模型",
+      "role": "main"
+    },
+    {
+      "id": "e08",
+      "from": "source_review",
+      "to": "source_hold",
+      "label": "来源驳回",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e09",
+      "from": "source_hold",
+      "to": "source_review",
+      "label": "补齐重审",
+      "role": "return"
+    },
+    {
+      "id": "e10",
+      "from": "character_s03",
+      "to": "material_hold",
+      "label": "材料不足",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e11",
+      "from": "material_hold",
+      "to": "extract_glyphs",
+      "label": "修整复核",
+      "role": "return"
+    },
+    {
+      "id": "e12",
+      "from": "gpu2_model",
+      "to": "runtime_hold",
+      "label": "训练失败",
+      "role": "error",
+      "variant": "security"
+    },
+    {
+      "id": "e13",
+      "from": "deployment_eval",
+      "to": "quality_hold",
+      "label": "质量不合格",
+      "role": "error",
+      "variant": "security",
+      "fromSide": "bottom"
+    },
+    {
+      "id": "e17",
+      "from": "batch_export",
+      "to": "item_hold",
+      "label": "单张失败",
+      "role": "error",
+      "variant": "security"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "amber",
+      "title": "GPU2 现状",
+      "items": [
+        "8 epoch / 192 updates 的原训练权重已保留。推理资格、真实效果评估、质量审核和正式发布仍须各自通过；图中没有将待办标成完成。"
+      ]
+    },
+    {
+      "dot": "cyan",
+      "title": "质量与发布门",
+      "items": [
+        "效果评估覆盖已见字、未见字和必要混排。AI复核与Owner确认分开记录；任何质量失败或本人不接受都不能发布。"
+      ]
+    },
+    {
+      "dot": "rose",
+      "title": "任务恢复",
+      "items": [
+        "失败后先读取原运行或原批次状态，不重复创建整项任务。训练侧只恢复服务端允许的失败步骤；生成侧只重试指定图片。"
+      ]
+    }
+  ]
+}
