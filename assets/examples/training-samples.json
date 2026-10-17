@@ -1,0 +1,80 @@
+[
+  {
+    "character": "永",
+    "image": "training-glyph-6c38.png",
+    "sha256": "63c808844335d8bc42cef1d00a0642cb87992982f5e45e24a0b20757b091258e",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.36996336996337,
+      "y_norm": 0.889795918367347,
+      "w_norm": 0.08608058608058605,
+      "h_norm": 0.0714285714285714
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  },
+  {
+    "character": "远",
+    "image": "training-glyph-8fdc.png",
+    "sha256": "6707791b4965f76e86574af8bf02beb8d551680be3d80718767b660cf614380e",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.45604395604395603,
+      "y_norm": 0.9040816326530612,
+      "w_norm": 0.09340659340659346,
+      "h_norm": 0.05816326530612248
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  },
+  {
+    "character": "在",
+    "image": "training-glyph-5728.png",
+    "sha256": "c5a76d6fa23743924856264b378782eb77cba8d9777db1992964a74aaef04335",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.549451,
+      "y_norm": 0.89898,
+      "w_norm": 0.071429,
+      "h_norm": 0.054082
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  },
+  {
+    "character": "起",
+    "image": "training-glyph-8d77.png",
+    "sha256": "982dbb80913c99fcdaa0f99e3f5102068d7f561c3ed94032be99e1e2abb71533",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.684982,
+      "y_norm": 0.897959,
+      "w_norm": 0.100733,
+      "h_norm": 0.056122
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  },
+  {
+    "character": "莱",
+    "image": "training-glyph-83b1.png",
+    "sha256": "9426d5ea1865c5bc2346e919a99fe828b0ab44f18bbad9cf51a856b271a1955b",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.287546,
+      "y_norm": 0.794898,
+      "w_norm": 0.091575,
+      "h_norm": 0.073469
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  },
+  {
+    "character": "克",
+    "image": "training-glyph-514b.png",
+    "sha256": "b9b7d65599fa0b0d692adffb035976dc3849753ad8539791be8a0467751df447",
+    "source": "training-reference-blue.png",
+    "bbox_normalized": {
+      "x_norm": 0.3882783882783883,
+      "y_norm": 0.7918367346938775,
+      "w_norm": 0.08608058608058608,
+      "h_norm": 0.07244897959183673
+    },
+    "review": "AI 授权审核；不是本人手动确认"
+  }
+]
